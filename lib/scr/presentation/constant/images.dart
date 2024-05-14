@@ -5,4 +5,5 @@ class PngImages {
   static const String backLogo = '$_path/backLogo.png';
   static const String imageOne = '$_path/imageOne.png';
   static const String imageTwo = '$_path/imageTwo.png';
+  static const String google = '$_path/google.png';
 }
