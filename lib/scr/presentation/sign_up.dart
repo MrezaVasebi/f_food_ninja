@@ -14,7 +14,6 @@ class SignUp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const SignInUpHeader(),
         Expanded(
           flex: 1,
           child: SizedBox(
@@ -22,6 +21,7 @@ class SignUp extends StatelessWidget {
             child: SingleChildScrollView(
               child: Column(
                 children: [
+                  const SignInUpHeader(),
                   const SizedBox(
                     height: 10,
                   ),
