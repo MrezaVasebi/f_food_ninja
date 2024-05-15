@@ -1,10 +1,19 @@
 import 'package:flutter/material.dart';
 
 class AppInput extends StatelessWidget {
-  const AppInput({this.hintText, required this.onChanged, super.key});
+  const AppInput(
+      {this.hintText,
+      this.obscureText,
+      this.prefixIcon,
+      this.suffixIcon,
+      required this.onChanged,
+      super.key});
 
   final double br = 15;
   final String? hintText;
+  final Widget? prefixIcon;
+  final Widget? suffixIcon;
+  final bool? obscureText;
   final void Function(String)? onChanged;
 
   @override
@@ -37,9 +46,12 @@ class AppInput extends StatelessWidget {
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(br),
         ),
+        prefixIcon: prefixIcon,
+        suffixIcon: suffixIcon,
       ),
       autofocus: false,
       autocorrect: false,
+      obscureText: obscureText ?? false,
       onChanged: onChanged,
       style: const TextStyle(
         color: Colors.black,
