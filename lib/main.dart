@@ -1,4 +1,4 @@
-import 'package:f_food_delivery/scr/presentation/payment_method.dart';
+import 'package:f_food_delivery/scr/presentation/upload_your_photo.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.white,
-        body: PaymentMethod(),
+        body: UploadYourPhoto(),
       ),
     );
   }

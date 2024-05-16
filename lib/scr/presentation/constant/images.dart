@@ -12,4 +12,6 @@ class PngImages {
   static const String payoneer = '$_path/Payoneer.png';
   static const String visa = '$_path/visa.png';
   static const String paypal = '$_path/paypal.png';
+  static const String gallery = '$_path/gallery.png';
+  static const String camera = '$_path/camera.png';
 }
