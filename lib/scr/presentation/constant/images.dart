@@ -9,4 +9,7 @@ class PngImages {
   static const String user = '$_path/user.png';
   static const String email = '$_path/email.png';
   static const String lock = '$_path/lock.png';
+  static const String payoneer = '$_path/Payoneer.png';
+  static const String visa = '$_path/visa.png';
+  static const String paypal = '$_path/paypal.png';
 }
