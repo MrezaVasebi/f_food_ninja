@@ -14,4 +14,5 @@ class PngImages {
   static const String paypal = '$_path/paypal.png';
   static const String gallery = '$_path/gallery.png';
   static const String camera = '$_path/camera.png';
+  static const String location = '$_path/location.png';
 }
