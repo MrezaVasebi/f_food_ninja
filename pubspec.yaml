@@ -75,6 +75,7 @@ flutter:
       - assets/images/emailOne.png
       - assets/images/message.png
       - assets/images/success.png
+      - assets/images/notification.png
       # - images/a_dot_ham.jpeg
 
    # An image asset can refer to one or more resolution-specific "variants", see

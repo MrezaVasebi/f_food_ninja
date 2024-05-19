@@ -72,38 +72,3 @@ class SuccessNotification extends StatelessWidget {
     );
   }
 }
-
-
-/*
-Center(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Image.asset(
-                    PngImages.success,
-                  ),
-                  const SizedBox(
-                    height: 33,
-                  ),
-                  const AppText(
-                    lbl: 'Congrats!',
-                    style: TextStyle(
-                      fontSize: 30,
-                      color: Colors.greenAccent,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 33,
-                  ),
-                  const AppText(
-                    lbl: 'Password reset successful',
-                    style: TextStyle(
-                      fontSize: 23,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  )
-                ],
-              ),
-            ),
-*/

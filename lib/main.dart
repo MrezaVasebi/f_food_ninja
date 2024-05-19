@@ -1,4 +1,4 @@
-import 'package:f_food_delivery/scr/presentation/success_notification.dart';
+import 'package:f_food_delivery/scr/presentation/home.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,10 +14,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.white,
-        body: SuccessNotification(
-          msg: 'Your Profile Is Ready To Use.',
-          lblBtn: 'Try Order',
-        ),
+        body: Home(),
       ),
     );
   }
