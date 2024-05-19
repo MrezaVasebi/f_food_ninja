@@ -17,4 +17,5 @@ class PngImages {
   static const String location = '$_path/location.png';
   static const String emailOne = '$_path/emailOne.png';
   static const String message = '$_path/message.png';
+  static const String success = '$_path/success.png';
 }
