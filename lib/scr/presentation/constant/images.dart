@@ -19,4 +19,6 @@ class PngImages {
   static const String message = '$_path/message.png';
   static const String success = '$_path/success.png';
   static const String notification = '$_path/notification.png';
+  static const String filter = '$_path/filter.png';
+  static const String search = '$_path/search.png';
 }
