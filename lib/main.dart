@@ -1,4 +1,4 @@
-import 'package:f_food_delivery/scr/presentation/your_location.dart';
+import 'package:f_food_delivery/scr/presentation/verification_code.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.white,
-        body: YourLocation(),
+        body: VerificationCode(),
       ),
     );
   }
