@@ -51,53 +51,57 @@ class ForgetPassword extends StatelessWidget {
                   },
                   itemBuilder: (context, index) {
                     final item = methods[index];
-                    return Container(
-                      width: double.infinity,
-                      padding: const EdgeInsets.all(20),
-                      decoration: BoxDecoration(
-                        boxShadow: const [
-                          BoxShadow(
-                            color: Color.fromARGB(255, 207, 206, 206),
-                            blurRadius: 15.0, // soften the shadow
-                            spreadRadius: 1.0, //extend the shadow
-                            offset: Offset(
-                              2.0, // Move to right 10  horizontally
-                              2.0, // Move to bottom 10 Vertically
+
+                    return InkWell(
+                      onTap: () {},
+                      child: Container(
+                        width: double.infinity,
+                        padding: const EdgeInsets.all(20),
+                        decoration: BoxDecoration(
+                          boxShadow: const [
+                            BoxShadow(
+                              color: Color.fromARGB(255, 207, 206, 206),
+                              blurRadius: 15.0, // soften the shadow
+                              spreadRadius: 1.0, //extend the shadow
+                              offset: Offset(
+                                2.0, // Move to right 10  horizontally
+                                2.0, // Move to bottom 10 Vertically
+                              ),
+                            )
+                          ],
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(15),
+                        ),
+                        child: Row(
+                          children: [
+                            Image.asset(
+                              width: 40,
+                              height: 40,
+                              item['icon'],
+                              fit: BoxFit.contain,
                             ),
-                          )
-                        ],
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(15),
-                      ),
-                      child: Row(
-                        children: [
-                          Image.asset(
-                            width: 40,
-                            height: 40,
-                            item['icon'],
-                            fit: BoxFit.contain,
-                          ),
-                          const SizedBox(
-                            width: 10,
-                          ),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              AppText(
-                                lbl: item['lbl'],
-                                style: const TextStyle(
-                                  color: Colors.grey,
+                            const SizedBox(
+                              width: 10,
+                            ),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                AppText(
+                                  lbl: item['lbl'],
+                                  style: const TextStyle(
+                                    color: Colors.grey,
+                                  ),
                                 ),
-                              ),
-                              const SizedBox(
-                                height: 5,
-                              ),
-                              AppText(
-                                lbl: item['placeholder'],
-                              ),
-                            ],
-                          )
-                        ],
+                                const SizedBox(
+                                  height: 5,
+                                ),
+                                AppText(
+                                  lbl: item['placeholder'],
+                                ),
+                              ],
+                            )
+                          ],
+                        ),
                       ),
                     );
                   },

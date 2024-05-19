@@ -21,7 +21,7 @@ class AppInput extends StatelessWidget {
     return TextField(
       decoration: InputDecoration(
         contentPadding: const EdgeInsets.only(
-          left: 28,
+          left: 18,
         ),
         filled: true, // don't forget this line to change background color
         fillColor: Colors.white,
