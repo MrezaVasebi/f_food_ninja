@@ -78,6 +78,16 @@ flutter:
       - assets/images/notification.png
       - assets/images/filter.png
       - assets/images/search.png
+      - assets/images/advertising.png
+      - assets/images/resOne.png
+      - assets/images/resTwo.png
+      - assets/images/resThree.png
+      - assets/images/resFour.png
+      - assets/images/resFive.png
+      - assets/images/resSix.png
+      - assets/images/menuOne.png
+      - assets/images/menuTwo.png
+      - assets/images/menuThree.png
       # - images/a_dot_ham.jpeg
 
    # An image asset can refer to one or more resolution-specific "variants", see

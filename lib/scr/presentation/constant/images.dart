@@ -21,4 +21,14 @@ class PngImages {
   static const String notification = '$_path/notification.png';
   static const String filter = '$_path/filter.png';
   static const String search = '$_path/search.png';
+  static const String advertising = '$_path/advertising.png';
+  static const String resOne = '$_path/resOne.png';
+  static const String resTwo = '$_path/resTwo.png';
+  static const String resThree = '$_path/resThree.png';
+  static const String resFour = '$_path/resFour.png';
+  static const String resFive = '$_path/resFive.png';
+  static const String resSix = '$_path/resSix.png';
+  static const String menuOne = '$_path/menuOne.png';
+  static const String menuTwo = '$_path/menuTwo.png';
+  static const String menuThree = '$_path/menuThree.png';
 }

@@ -31,7 +31,11 @@ class HomeFilter extends StatelessWidget {
                 borderRadius: BorderRadius.circular(15),
                 borderSide: BorderSide.none,
               ),
-              focusedBorder: InputBorder.none,
+              focusedBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(15),
+                  borderSide: const BorderSide(
+                    color: Colors.white,
+                  )),
               border: InputBorder.none,
             ),
           ),
