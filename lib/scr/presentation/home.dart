@@ -58,16 +58,20 @@ class Home extends StatelessWidget {
                 // TODO: some extra wrong gap
                 SizedBox(
                   width: double.infinity,
-                  child: ListView.separated(
-                    shrinkWrap: true,
-                    itemCount: popular.length,
-                    itemBuilder: (context, index) {
-                      final item = popular[index];
-                      return PopularCart(item: item);
-                    },
-                    separatorBuilder: (context, index) {
-                      return const SizedBox(height: 10);
-                    },
+                  child: MediaQuery.removePadding(
+                    context: context,
+                    removeTop: true,
+                    child: ListView.separated(
+                      shrinkWrap: true,
+                      itemCount: popular.length,
+                      itemBuilder: (context, index) {
+                        final item = popular[index];
+                        return PopularCart(item: item);
+                      },
+                      separatorBuilder: (context, index) {
+                        return const SizedBox(height: 10);
+                      },
+                    ),
                   ),
                 ),
               ],
