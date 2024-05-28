@@ -1,10 +1,10 @@
 import 'package:f_food_delivery/scr/presentation/constant/dummy_data.dart';
 import 'package:f_food_delivery/scr/presentation/constant/images.dart';
+import 'package:f_food_delivery/scr/presentation/menu_list.dart';
+import 'package:f_food_delivery/scr/presentation/restaurant_list.dart';
 import 'package:f_food_delivery/scr/presentation/widgets/home_category_more.dart';
 import 'package:f_food_delivery/scr/presentation/widgets/home_filter.dart';
 import 'package:f_food_delivery/scr/presentation/widgets/home_header.dart';
-import 'package:f_food_delivery/scr/presentation/widgets/nearest_cart.dart';
-import 'package:f_food_delivery/scr/presentation/widgets/popular_cart.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
@@ -39,17 +39,7 @@ class Home extends StatelessWidget {
                 ),
                 SizedBox(
                   height: 200,
-                  child: ListView.separated(
-                    itemCount: nearest.length,
-                    separatorBuilder: (context, index) {
-                      return const SizedBox(width: 20);
-                    },
-                    scrollDirection: Axis.horizontal,
-                    itemBuilder: (context, index) {
-                      final item = nearest[index];
-                      return NearestCart(item: item);
-                    },
-                  ),
+                  child: RestaurantList(list: nearest),
                 ),
                 HomeCategoryMore(
                   onPressed: () {},
@@ -60,17 +50,7 @@ class Home extends StatelessWidget {
                   child: MediaQuery.removePadding(
                     context: context,
                     removeTop: true,
-                    child: ListView.separated(
-                      shrinkWrap: true,
-                      itemCount: popular.length,
-                      itemBuilder: (context, index) {
-                        final item = popular[index];
-                        return PopularCart(item: item);
-                      },
-                      separatorBuilder: (context, index) {
-                        return const SizedBox(height: 10);
-                      },
-                    ),
+                    child: MenuList(list: popular),
                   ),
                 ),
               ],

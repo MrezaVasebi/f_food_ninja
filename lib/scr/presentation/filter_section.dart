@@ -1,6 +1,6 @@
 import 'package:f_food_delivery/scr/presentation/constant/dummy_data.dart';
 import 'package:f_food_delivery/scr/presentation/widgets/app_button.dart';
-import 'package:f_food_delivery/scr/presentation/widgets/filter_item_widget.dart';
+import 'package:f_food_delivery/scr/presentation/widgets/filter_section_list.dart';
 import 'package:f_food_delivery/scr/presentation/widgets/home_filter.dart';
 import 'package:f_food_delivery/scr/presentation/widgets/home_header.dart';
 import 'package:flutter/material.dart';
@@ -30,7 +30,7 @@ class FilterSection extends StatelessWidget {
                         child: Column(
                           children: [
                             const HomeFilter(showFilter: false),
-                            FilterItemWidget(items: filterItem),
+                            FilterSectionList(items: filterItem),
                           ],
                         ),
                       ),

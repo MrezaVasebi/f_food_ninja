@@ -1,8 +1,8 @@
 import 'package:f_food_delivery/scr/presentation/widgets/app_text.dart';
 import 'package:flutter/material.dart';
 
-class PopularCart extends StatelessWidget {
-  const PopularCart({required this.item, super.key});
+class MenuCart extends StatelessWidget {
+  const MenuCart({required this.item, super.key});
 
   final dynamic item;
 

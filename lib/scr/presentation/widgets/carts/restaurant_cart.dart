@@ -1,8 +1,8 @@
 import 'package:f_food_delivery/scr/presentation/widgets/app_text.dart';
 import 'package:flutter/material.dart';
 
-class NearestCart extends StatelessWidget {
-  const NearestCart({required this.item, super.key});
+class RestaurantCart extends StatelessWidget {
+  const RestaurantCart({required this.item, super.key});
 
   final dynamic item;
 
