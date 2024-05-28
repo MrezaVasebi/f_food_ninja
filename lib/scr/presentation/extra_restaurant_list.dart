@@ -10,38 +10,55 @@ class ExtraRestaurantList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
+    return SizedBox(
+      width: double.infinity,
+      height: MediaQuery.of(context).size.height,
       child: Column(
         children: [
-          const HomeHeader(),
-          const SizedBox(height: 20),
-          Padding(
-            padding: const EdgeInsets.only(
-              left: 20,
-              right: 20,
-              bottom: 20,
-            ),
+          Expanded(
+            flex: 1,
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const HomeFilter(),
-                const SizedBox(height: 20),
-                const AppText(
-                  lbl: 'Popular Restaurant',
-                  style: TextStyle(
-                    fontSize: 15,
-                    fontWeight: FontWeight.bold,
+                const HomeHeader(),
+                const Padding(
+                  padding: EdgeInsets.all(20),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      HomeFilter(),
+                      SizedBox(height: 20),
+                      AppText(
+                        lbl: 'Popular Restaurant',
+                        style: TextStyle(
+                          fontSize: 15,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ],
                   ),
                 ),
-                const SizedBox(height: 20),
-                MediaQuery.removePadding(
-                  context: context,
-                  removeTop: true,
-                  child: GridRestaurantList(list: nearest),
+                Expanded(
+                  flex: 1,
+                  child: Container(
+                    width: double.infinity,
+                    margin: const EdgeInsets.only(
+                      left: 20,
+                      right: 20,
+                      bottom: 20,
+                    ),
+                    height: MediaQuery.of(context).size.height,
+                    child: MediaQuery.removePadding(
+                      context: context,
+                      removeTop: true,
+                      child: GridRestaurantList(
+                        list: nearest,
+                      ),
+                    ),
+                  ),
                 )
               ],
             ),
-          )
+          ),
         ],
       ),
     );

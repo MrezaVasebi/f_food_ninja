@@ -16,7 +16,7 @@ class RestaurantCart extends StatelessWidget {
         borderRadius: BorderRadius.circular(15),
         border: Border.all(
           color: Colors.grey,
-          width: .2,
+          width: .3,
         ),
       ),
       child: Column(

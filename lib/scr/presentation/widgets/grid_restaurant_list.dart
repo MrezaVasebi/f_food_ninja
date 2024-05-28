@@ -11,23 +11,29 @@ class GridRestaurantList extends StatelessWidget {
     return GridView.builder(
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
-        mainAxisSpacing: 20,
-        crossAxisSpacing: 20,
+        mainAxisSpacing: 10,
+        crossAxisSpacing: 10,
       ),
-      // padding: const EdgeInsets.all(8),
       shrinkWrap: true,
       itemCount: list.length,
       itemBuilder: (context, index) {
         final item = list[index];
         return Container(
-          decoration: const BoxDecoration(
-            boxShadow: [
+          decoration: BoxDecoration(
+            borderRadius: const BorderRadius.all(
+              Radius.circular(15),
+            ),
+            border: Border.all(
+              width: 0,
+              color: Colors.white,
+            ),
+            boxShadow: const [
               BoxShadow(
-                color: Color.fromARGB(255, 207, 206, 206),
-                blurRadius: 15.0, // soften the shadow
-                spreadRadius: 1.0, //extend the shadow
+                color: Color.fromARGB(255, 229, 225, 225),
+                blurRadius: 1.0, // soften the shadow
+                spreadRadius: 1, //extend the shadow
                 offset: Offset(
-                  2.0, // Move to right 10  horizontally
+                  2.0, // Move to right 20  horizontally
                   2.0, // Move to bottom 10 Vertically
                 ),
               )

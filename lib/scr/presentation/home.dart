@@ -39,7 +39,9 @@ class Home extends StatelessWidget {
                 ),
                 SizedBox(
                   height: 200,
-                  child: RestaurantList(list: nearest),
+                  child: RestaurantList(
+                    list: nearest,
+                  ),
                 ),
                 HomeCategoryMore(
                   onPressed: () {},
@@ -50,7 +52,9 @@ class Home extends StatelessWidget {
                   child: MediaQuery.removePadding(
                     context: context,
                     removeTop: true,
-                    child: MenuList(list: popular),
+                    child: MenuList(
+                      list: popular,
+                    ),
                   ),
                 ),
               ],
