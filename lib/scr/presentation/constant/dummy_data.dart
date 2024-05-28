@@ -29,3 +29,15 @@ final List popular = [
     'price': "\$15"
   },
 ];
+
+final Map<String, List<String>> filterItem = {
+  "Type": ['Restaurant', 'Menu'],
+  "Location": ['1 Km', '>10 Km', '<10 Km'],
+  "Food": [
+    'Cake',
+    'Soup',
+    'Main Course',
+    'Appetizer',
+    'Dessert',
+  ],
+};

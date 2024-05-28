@@ -55,7 +55,6 @@ class Home extends StatelessWidget {
                   onPressed: () {},
                   catName: 'Popular Menu',
                 ),
-                // TODO: some extra wrong gap
                 SizedBox(
                   width: double.infinity,
                   child: MediaQuery.removePadding(
