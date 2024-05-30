@@ -41,3 +41,24 @@ final Map<String, List<String>> filterItem = {
     'Dessert',
   ],
 };
+
+final List chatUser = [
+  {
+    'name': 'Anamwp',
+    'msg': 'Your Order Just Arrived!',
+    'time': '20:00',
+    'img': PngImages.userOne
+  },
+  {
+    'name': 'Guy Hawkins',
+    'msg': 'Your Order Just Arrived!',
+    'time': '20:00',
+    'img': PngImages.userTwo
+  },
+  {
+    'name': 'Leslie Alexander',
+    'msg': 'Your Order Just Arrived!',
+    'time': '20:00',
+    'img': PngImages.userThree
+  },
+];

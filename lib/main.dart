@@ -1,4 +1,4 @@
-import 'package:f_food_delivery/scr/presentation/extra_menu_list.dart';
+import 'package:f_food_delivery/scr/presentation/chat_.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.white,
-        body: ExtraMenuList(),
+        body: Chat(),
       ),
     );
   }
