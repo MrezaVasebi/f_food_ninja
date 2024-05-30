@@ -1,8 +1,6 @@
 import 'package:f_food_delivery/scr/presentation/chat_list.dart';
 import 'package:f_food_delivery/scr/presentation/constant/dummy_data.dart';
-import 'package:f_food_delivery/scr/presentation/constant/images.dart';
-import 'package:f_food_delivery/scr/presentation/widgets/app_text.dart';
-import 'package:f_food_delivery/scr/presentation/widgets/square_button.dart';
+import 'package:f_food_delivery/scr/presentation/widgets/chat_header.dart';
 import 'package:flutter/material.dart';
 
 class Chat extends StatelessWidget {
@@ -16,46 +14,11 @@ class Chat extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Container(
-            height: 150,
-            // color: Colors.blue,
-            width: double.infinity,
-            decoration: const BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage(
-                  PngImages.backLogo,
-                ),
-                fit: BoxFit.cover,
-              ),
-            ),
-            child: Padding(
-              padding: const EdgeInsets.only(
-                top: 38,
-                left: 25,
-              ),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  SquareButton(
-                    onTap: () {},
-                    child: const Icon(
-                      Icons.chevron_left_rounded,
-                      color: Colors.deepOrange,
-                      size: 30,
-                    ),
-                  ),
-                  const SizedBox(height: 20),
-                  const AppText(
-                    lbl: 'Chat',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 25,
-                    ),
-                  )
-                ],
-              ),
-            ),
+          const ChatHeader(
+            userSelected: false,
+          ),
+          const SizedBox(
+            height: 20,
           ),
           Expanded(
             flex: 1,
