@@ -1,7 +1,11 @@
-import 'package:f_food_delivery/scr/presentation/chat_.dart';
+import 'package:f_food_delivery/scr/presentation/chat_details.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setEnabledSystemUIMode(SystemUiMode.leanBack); // hide statusbar
+
   runApp(const MyApp());
 }
 
@@ -15,7 +19,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.white,
-        body: Chat(),
+        body: ChatDetails(),
       ),
     );
   }

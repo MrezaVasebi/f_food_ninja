@@ -62,3 +62,10 @@ final List chatUser = [
     'img': PngImages.userThree
   },
 ];
+
+final List messages = [
+  {'who': 'sender', 'msg': 'Just to order'},
+  {'who': 'receiver', 'msg': 'Okay, for what level of spiciness?'},
+  {'who': 'sender', 'msg': 'Okay, wait a minute 👍'},
+  {'who': 'receiver', 'msg': 'Okay I am waiting  👍'},
+];
