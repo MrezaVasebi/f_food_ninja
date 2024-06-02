@@ -34,4 +34,5 @@ class PngImages {
   static const String userOne = '$_path/userOne.png';
   static const String userTwo = '$_path/userTwo.png';
   static const String userThree = '$_path/userThree.png';
+  static const String userFour = '$_path/userFour.png';
 }
