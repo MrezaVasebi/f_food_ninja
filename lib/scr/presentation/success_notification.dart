@@ -4,10 +4,7 @@ import 'package:f_food_delivery/scr/presentation/widgets/app_text.dart';
 import 'package:flutter/material.dart';
 
 class SuccessNotification extends StatelessWidget {
-  const SuccessNotification({this.msg, this.lblBtn, super.key});
-
-  final String? msg;
-  final String? lblBtn;
+  const SuccessNotification({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -19,28 +16,25 @@ class SuccessNotification extends StatelessWidget {
             children: [
               Expanded(
                 flex: 1,
-                child: Align(
-                  alignment: Alignment.bottomCenter,
-                  child: Container(
-                    // color: Colors.amber,`
-                    decoration: const BoxDecoration(
-                      image: DecorationImage(
-                        image: AssetImage(PngImages.backLogo),
-                        fit: BoxFit.cover,
-                      ),
+                child: Container(
+                  // color: Colors.amber,`
+                  decoration: const BoxDecoration(
+                    image: DecorationImage(
+                      image: AssetImage(PngImages.backLogo),
+                      fit: BoxFit.cover,
                     ),
-                    child: Image.asset(PngImages.success),
                   ),
+                  child: Align(
+                      alignment: Alignment.bottomCenter,
+                      child: Image.asset(PngImages.success)),
                 ),
               ),
-              Expanded(
+              const Expanded(
                 flex: 1,
                 child: Column(
                   children: [
-                    const SizedBox(
-                      height: 33,
-                    ),
-                    const AppText(
+                    SizedBox(height: 33),
+                    AppText(
                       lbl: 'Congrats!',
                       style: TextStyle(
                         fontSize: 30,
@@ -48,12 +42,10 @@ class SuccessNotification extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    const SizedBox(
-                      height: 33,
-                    ),
+                    SizedBox(height: 12),
                     AppText(
-                      lbl: msg,
-                      style: const TextStyle(
+                      lbl: 'Password reset successfully',
+                      style: TextStyle(
                         fontSize: 23,
                         fontWeight: FontWeight.bold,
                       ),
@@ -66,7 +58,7 @@ class SuccessNotification extends StatelessWidget {
         ),
         Padding(
           padding: const EdgeInsets.only(bottom: 60),
-          child: AppButton(lbl: lblBtn, onPressed: () {}),
+          child: AppButton(lbl: 'Next', onPressed: () {}),
         )
       ],
     );
