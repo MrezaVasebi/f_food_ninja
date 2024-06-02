@@ -1,4 +1,4 @@
-import 'package:f_food_delivery/scr/presentation/call_ringing.dart';
+import 'package:f_food_delivery/scr/presentation/notif.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.white,
-        body: CallRinging(),
+        body: Notif(),
       ),
     );
   }

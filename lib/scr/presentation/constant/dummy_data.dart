@@ -69,3 +69,17 @@ final List messages = [
   {'who': 'sender', 'msg': 'Okay, wait a minute 👍'},
   {'who': 'receiver', 'msg': 'Okay I am waiting  👍'},
 ];
+
+final List notifications = [
+  {
+    'type': 'success',
+    'msg': 'Your order has been taken by the driver',
+    'time': 'Recently'
+  },
+  {'type': 'warn', 'msg': 'Topup for \$100 was successful', 'time': '10.00 Am'},
+  {
+    'type': 'error',
+    'msg': 'Your order has been canceled',
+    'time': '22 Juny 2021'
+  },
+];
