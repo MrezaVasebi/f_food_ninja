@@ -30,6 +30,7 @@ class FilterSection extends StatelessWidget {
                         child: Column(
                           children: [
                             const HomeFilter(showFilter: false),
+                            const SizedBox(height: 20),
                             FilterSectionList(items: filterItem),
                           ],
                         ),

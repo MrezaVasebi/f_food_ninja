@@ -1,6 +1,6 @@
 import 'package:f_food_delivery/scr/presentation/constant/images.dart';
 import 'package:f_food_delivery/scr/presentation/widgets/app_button.dart';
-import 'package:f_food_delivery/scr/presentation/widgets/app_text.dart';
+import 'package:f_food_delivery/scr/presentation/widgets/carts/photo_cart.dart';
 import 'package:f_food_delivery/scr/presentation/widgets/sign_up_process_header.dart';
 import 'package:flutter/material.dart';
 
@@ -33,58 +33,11 @@ class UploadYourPhoto extends StatelessWidget {
                 shrinkWrap: true,
                 itemCount: images.length,
                 separatorBuilder: (context, index) {
-                  return const SizedBox(
-                    height: 10,
-                  );
+                  return const SizedBox(height: 10);
                 },
                 itemBuilder: (context, index) {
                   final item = images[index];
-
-                  return Padding(
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 20,
-                    ),
-                    child: Container(
-                      height: 129,
-                      // color: Colors.yellow,
-                      decoration: BoxDecoration(
-                        boxShadow: const [
-                          BoxShadow(
-                            color: Color.fromARGB(255, 207, 206, 206),
-                            blurRadius: 15.0, // soften the shadow
-                            spreadRadius: 1.0, //extend the shadow
-                            offset: Offset(
-                              2.0, // Move to right 10  horizontally
-                              2.0, // Move to bottom 10 Vertically
-                            ),
-                          )
-                        ],
-                        borderRadius: BorderRadius.circular(15),
-                        color: Colors.white,
-                      ),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Image.asset(
-                            item['img'],
-                            width: 35,
-                            height: 35,
-                          ),
-                          const SizedBox(
-                            height: 10,
-                          ),
-                          AppText(
-                            lbl: item['lbl'],
-                            style: const TextStyle(
-                              fontSize: 14,
-                              color: Colors.black,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          )
-                        ],
-                      ),
-                    ),
-                  );
+                  return PhotoCart(item: item);
                 },
               )
             ],

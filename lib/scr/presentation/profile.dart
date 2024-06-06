@@ -87,10 +87,10 @@ class Profile extends StatelessWidget {
                             )
                           ],
                         ),
+                        const SizedBox(height: 20),
                         Container(
                           height: 64,
                           width: double.infinity,
-                          margin: const EdgeInsets.only(top: 20),
                           decoration: BoxDecoration(
                             color: Colors.white,
                             borderRadius: BorderRadius.circular(22),

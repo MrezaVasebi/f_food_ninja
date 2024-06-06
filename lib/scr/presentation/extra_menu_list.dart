@@ -32,7 +32,7 @@ class ExtraMenuList extends StatelessWidget {
                         HomeFilter(),
                         SizedBox(height: 20),
                         AppText(
-                          lbl: 'Popular Restaurant',
+                          lbl: 'Popular Menu',
                           style: TextStyle(
                             fontSize: 15,
                             fontWeight: FontWeight.bold,

@@ -11,8 +11,8 @@ class GridRestaurantList extends StatelessWidget {
     return GridView.builder(
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
-        mainAxisSpacing: 10,
-        crossAxisSpacing: 10,
+        mainAxisSpacing: 20,
+        crossAxisSpacing: 20,
       ),
       shrinkWrap: true,
       itemCount: list.length,

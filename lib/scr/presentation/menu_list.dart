@@ -16,7 +16,7 @@ class MenuList extends StatelessWidget {
         return MenuCart(item: item);
       },
       separatorBuilder: (context, index) {
-        return const SizedBox(height: 10);
+        return const SizedBox(height: 20);
       },
     );
   }

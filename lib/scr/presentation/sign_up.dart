@@ -58,9 +58,7 @@ class SignUp extends StatelessWidget {
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                        const SizedBox(
-                          height: 20,
-                        ),
+                        const SizedBox(height: 20),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
@@ -84,19 +82,20 @@ class SignUp extends StatelessWidget {
                             ),
                           ],
                         ),
-                        const SizedBox(
-                          height: 20,
-                        ),
+                        const SizedBox(height: 20),
                         AppTextButton(
                           'Forgot Your Password?',
                           () {},
                         ),
-                        const SizedBox(
-                          height: 30,
-                        ),
+                        const SizedBox(height: 20),
                         AppButton(
                           lbl: 'Login',
                           onPressed: () {},
+                        ),
+                        const SizedBox(height: 20),
+                        AppTextButton(
+                          'create an Account?',
+                          () {},
                         )
                       ],
                     ),

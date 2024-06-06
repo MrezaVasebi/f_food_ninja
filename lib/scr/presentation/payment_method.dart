@@ -1,5 +1,6 @@
 import 'package:f_food_delivery/scr/presentation/constant/images.dart';
 import 'package:f_food_delivery/scr/presentation/widgets/app_button.dart';
+import 'package:f_food_delivery/scr/presentation/widgets/carts/payment_cart.dart';
 import 'package:f_food_delivery/scr/presentation/widgets/sign_up_process_header.dart';
 import 'package:flutter/material.dart';
 
@@ -34,43 +35,15 @@ class PaymentMethod extends StatelessWidget {
                   horizontal: 20,
                 ),
                 child: ListView.separated(
+                  shrinkWrap: true,
                   itemCount: payments.length,
                   separatorBuilder: (context, index) {
-                    return const SizedBox(
-                      height: 17,
-                    );
+                    return const SizedBox(height: 17);
                   },
                   itemBuilder: (BuildContext context, int index) {
                     final item = payments[index];
-                    return InkWell(
-                      onTap: () {},
-                      child: Container(
-                        height: 73,
-                        // color: Colors.yellow,
-                        decoration: BoxDecoration(
-                          boxShadow: const [
-                            BoxShadow(
-                              color: Color.fromARGB(255, 207, 206, 206),
-                              blurRadius: 15.0, // soften the shadow
-                              spreadRadius: 1.0, //extend the shadow
-                              offset: Offset(
-                                2.0, // Move to right 10  horizontally
-                                2.0, // Move to bottom 10 Vertically
-                              ),
-                            )
-                          ],
-                          borderRadius: BorderRadius.circular(15),
-                          color: Colors.white,
-                        ),
-                        child: Image.asset(
-                          item,
-                          width: 35,
-                          height: 35,
-                        ),
-                      ),
-                    );
+                    return PaymentCart(item: item);
                   },
-                  shrinkWrap: true,
                 ),
               )
             ],
