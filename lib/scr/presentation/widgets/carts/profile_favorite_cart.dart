@@ -1,8 +1,8 @@
 import 'package:f_food_delivery/scr/presentation/widgets/app_text.dart';
 import 'package:flutter/material.dart';
 
-class VoucherCart extends StatelessWidget {
-  const VoucherCart({required this.item, super.key});
+class ProfileFavoriteCart extends StatelessWidget {
+  const ProfileFavoriteCart({required this.item, super.key});
 
   final dynamic item;
 

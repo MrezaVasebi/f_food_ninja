@@ -40,7 +40,8 @@ class PngImages {
   static const String profile = '$_path/profile.png';
   static const String edit = '$_path/edit.png';
   static const String voucher = '$_path/voucher.png';
-  static const String voucherOne = '$_path/voucherOne.png';
-  static const String voucherTwo = '$_path/voucherTwo.png';
-  static const String voucherThree = '$_path/voucherThree.png';
+  static const String profileFavoriteOne = '$_path/profile_favorite_one.png';
+  static const String profileFavoriteTwo = '$_path/profile_favorite_two.png';
+  static const String profileFavoriteThree =
+      '$_path/profile_favorite_three.png';
 }

@@ -1,6 +1,6 @@
 import 'package:f_food_delivery/scr/presentation/constant/dummy_data.dart';
 import 'package:f_food_delivery/scr/presentation/constant/images.dart';
-import 'package:f_food_delivery/scr/presentation/voucher_list.dart';
+import 'package:f_food_delivery/scr/presentation/profile_favorites_list.dart';
 import 'package:f_food_delivery/scr/presentation/widgets/app_text.dart';
 import 'package:flutter/material.dart';
 
@@ -106,22 +106,25 @@ class Profile extends StatelessWidget {
                               )
                             ],
                           ),
-                          child: Padding(
-                            padding: const EdgeInsets.symmetric(
-                                vertical: 10, horizontal: 20),
-                            child: Row(
-                              children: [
-                                Image.asset(PngImages.voucher),
-                                const SizedBox(width: 18),
-                                const AppText(
-                                  lbl: 'You Have 3 Voucher',
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 15,
-                                    color: Colors.black,
-                                  ),
-                                )
-                              ],
+                          child: InkWell(
+                            onTap: () {},
+                            child: Padding(
+                              padding: const EdgeInsets.symmetric(
+                                  vertical: 10, horizontal: 20),
+                              child: Row(
+                                children: [
+                                  Image.asset(PngImages.voucher),
+                                  const SizedBox(width: 18),
+                                  const AppText(
+                                    lbl: 'You Have 3 Voucher',
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 15,
+                                      color: Colors.black,
+                                    ),
+                                  )
+                                ],
+                              ),
                             ),
                           ),
                         ),
@@ -138,7 +141,9 @@ class Profile extends StatelessWidget {
                         MediaQuery.removePadding(
                           context: context,
                           removeTop: true,
-                          child: VoucherList(list: voucherList),
+                          child: ProfileFavoritesList(
+                            list: profileFavoritesList,
+                          ),
                         )
                       ],
                     ),

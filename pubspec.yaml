@@ -97,9 +97,9 @@ flutter:
       - assets/images/profile.png
       - assets/images/edit.png
       - assets/images/voucher.png
-      - assets/images/voucherOne.png
-      - assets/images/voucherTwo.png
-      - assets/images/voucherThree.png
+      - assets/images/profile_favorite_one.png
+      - assets/images/profile_favorite_two.png
+      - assets/images/profile_favorite_three.png
       # - images/a_dot_ham.jpeg
 
    # An image asset can refer to one or more resolution-specific "variants", see

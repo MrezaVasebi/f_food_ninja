@@ -84,39 +84,21 @@ final List notifications = [
   },
 ];
 
-final List voucherList = [
+final List profileFavoritesList = [
   {
-    'img': PngImages.voucherOne,
+    'img': PngImages.profileFavoriteOne,
     'name': 'Spacy fresh crab',
     'desc': 'Waroenk kita',
     'price': '\$35',
   },
   {
-    'img': PngImages.voucherTwo,
+    'img': PngImages.profileFavoriteTwo,
     'name': 'Spacy fresh crab',
     'desc': 'Waroenk kita',
     'price': '\$35',
   },
   {
-    'img': PngImages.voucherThree,
-    'name': 'Spacy fresh crab',
-    'desc': 'Waroenk kita',
-    'price': '\$35',
-  },
-  {
-    'img': PngImages.menuOne,
-    'name': 'Spacy fresh crab',
-    'desc': 'Waroenk kita',
-    'price': '\$35',
-  },
-  {
-    'img': PngImages.menuTwo,
-    'name': 'Spacy fresh crab',
-    'desc': 'Waroenk kita',
-    'price': '\$35',
-  },
-  {
-    'img': PngImages.menuThree,
+    'img': PngImages.profileFavoriteThree,
     'name': 'Spacy fresh crab',
     'desc': 'Waroenk kita',
     'price': '\$35',

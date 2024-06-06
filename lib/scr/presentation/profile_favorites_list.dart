@@ -1,8 +1,8 @@
-import 'package:f_food_delivery/scr/presentation/widgets/carts/voucher_cart.dart';
+import 'package:f_food_delivery/scr/presentation/widgets/carts/profile_favorite_cart.dart';
 import 'package:flutter/material.dart';
 
-class VoucherList extends StatelessWidget {
-  const VoucherList({required this.list, super.key});
+class ProfileFavoritesList extends StatelessWidget {
+  const ProfileFavoritesList({required this.list, super.key});
 
   final List<dynamic> list;
 
@@ -12,9 +12,7 @@ class VoucherList extends StatelessWidget {
       shrinkWrap: true,
       itemBuilder: (context, index) {
         final item = list[index];
-        return VoucherCart(
-          item: item
-        );
+        return ProfileFavoriteCart(item: item);
       },
       separatorBuilder: (context, index) {
         return const SizedBox(height: 20);
