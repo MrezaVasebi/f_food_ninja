@@ -83,3 +83,42 @@ final List notifications = [
     'time': '22 Juny 2021'
   },
 ];
+
+final List voucherList = [
+  {
+    'img': PngImages.voucherOne,
+    'name': 'Spacy fresh crab',
+    'desc': 'Waroenk kita',
+    'price': '\$35',
+  },
+  {
+    'img': PngImages.voucherTwo,
+    'name': 'Spacy fresh crab',
+    'desc': 'Waroenk kita',
+    'price': '\$35',
+  },
+  {
+    'img': PngImages.voucherThree,
+    'name': 'Spacy fresh crab',
+    'desc': 'Waroenk kita',
+    'price': '\$35',
+  },
+  {
+    'img': PngImages.menuOne,
+    'name': 'Spacy fresh crab',
+    'desc': 'Waroenk kita',
+    'price': '\$35',
+  },
+  {
+    'img': PngImages.menuTwo,
+    'name': 'Spacy fresh crab',
+    'desc': 'Waroenk kita',
+    'price': '\$35',
+  },
+  {
+    'img': PngImages.menuThree,
+    'name': 'Spacy fresh crab',
+    'desc': 'Waroenk kita',
+    'price': '\$35',
+  },
+];

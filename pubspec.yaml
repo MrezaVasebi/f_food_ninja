@@ -94,6 +94,12 @@ flutter:
       - assets/images/userFour.png
       - assets/images/warn.png
       - assets/images/error.png
+      - assets/images/profile.png
+      - assets/images/edit.png
+      - assets/images/voucher.png
+      - assets/images/voucherOne.png
+      - assets/images/voucherTwo.png
+      - assets/images/voucherThree.png
       # - images/a_dot_ham.jpeg
 
    # An image asset can refer to one or more resolution-specific "variants", see

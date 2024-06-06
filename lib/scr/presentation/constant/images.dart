@@ -37,4 +37,10 @@ class PngImages {
   static const String userFour = '$_path/userFour.png';
   static const String warn = '$_path/warn.png';
   static const String error = '$_path/error.png';
+  static const String profile = '$_path/profile.png';
+  static const String edit = '$_path/edit.png';
+  static const String voucher = '$_path/voucher.png';
+  static const String voucherOne = '$_path/voucherOne.png';
+  static const String voucherTwo = '$_path/voucherTwo.png';
+  static const String voucherThree = '$_path/voucherThree.png';
 }
