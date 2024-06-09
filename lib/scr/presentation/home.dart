@@ -1,7 +1,7 @@
 import 'package:f_food_delivery/scr/presentation/constant/dummy_data.dart';
 import 'package:f_food_delivery/scr/presentation/constant/images.dart';
-import 'package:f_food_delivery/scr/presentation/menu_list.dart';
-import 'package:f_food_delivery/scr/presentation/restaurant_list.dart';
+import 'package:f_food_delivery/scr/presentation/list/menu_list.dart';
+import 'package:f_food_delivery/scr/presentation/list/restaurant_list.dart';
 import 'package:f_food_delivery/scr/presentation/widgets/home_category_more.dart';
 import 'package:f_food_delivery/scr/presentation/widgets/home_filter.dart';
 import 'package:f_food_delivery/scr/presentation/widgets/home_header.dart';

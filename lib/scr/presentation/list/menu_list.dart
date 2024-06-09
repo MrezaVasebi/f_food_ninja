@@ -1,23 +1,23 @@
-import 'package:f_food_delivery/scr/presentation/widgets/carts/profile_favorite_cart.dart';
+import 'package:f_food_delivery/scr/presentation/carts/menu_cart.dart';
 import 'package:flutter/material.dart';
 
-class ProfileFavoritesList extends StatelessWidget {
-  const ProfileFavoritesList({required this.list, super.key});
+class MenuList extends StatelessWidget {
+  const MenuList({required this.list, super.key});
 
-  final List<dynamic> list;
+  final dynamic list;
 
   @override
   Widget build(BuildContext context) {
     return ListView.separated(
       shrinkWrap: true,
+      itemCount: list.length,
       itemBuilder: (context, index) {
         final item = list[index];
-        return ProfileFavoriteCart(item: item);
+        return MenuCart(item: item);
       },
       separatorBuilder: (context, index) {
         return const SizedBox(height: 20);
       },
-      itemCount: list.length,
     );
   }
 }

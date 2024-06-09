@@ -1,6 +1,6 @@
+import 'package:f_food_delivery/scr/presentation/carts/payment_cart.dart';
 import 'package:f_food_delivery/scr/presentation/constant/images.dart';
 import 'package:f_food_delivery/scr/presentation/widgets/app_button.dart';
-import 'package:f_food_delivery/scr/presentation/widgets/carts/payment_cart.dart';
 import 'package:f_food_delivery/scr/presentation/widgets/sign_up_process_header.dart';
 import 'package:flutter/material.dart';
 

@@ -1,4 +1,4 @@
-import 'package:f_food_delivery/scr/presentation/chat_list.dart';
+import 'package:f_food_delivery/scr/presentation/list/chat_list.dart';
 import 'package:f_food_delivery/scr/presentation/constant/dummy_data.dart';
 import 'package:f_food_delivery/scr/presentation/widgets/chat_header.dart';
 import 'package:flutter/material.dart';

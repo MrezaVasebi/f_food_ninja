@@ -5,8 +5,8 @@ import 'package:f_food_delivery/scr/presentation/widgets/home_filter.dart';
 import 'package:f_food_delivery/scr/presentation/widgets/home_header.dart';
 import 'package:flutter/material.dart';
 
-class ExtraRestaurantList extends StatelessWidget {
-  const ExtraRestaurantList({super.key});
+class ExtraRestaurant extends StatelessWidget {
+  const ExtraRestaurant({super.key});
 
   @override
   Widget build(BuildContext context) {

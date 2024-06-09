@@ -1,5 +1,5 @@
+import 'package:f_food_delivery/scr/presentation/carts/filter_item_cart.dart';
 import 'package:f_food_delivery/scr/presentation/widgets/app_text.dart';
-import 'package:f_food_delivery/scr/presentation/widgets/carts/filter_item_cart.dart';
 import 'package:flutter/material.dart';
 
 class FilterSectionList extends StatelessWidget {

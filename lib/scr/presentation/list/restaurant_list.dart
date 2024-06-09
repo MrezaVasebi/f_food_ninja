@@ -1,4 +1,4 @@
-import 'package:f_food_delivery/scr/presentation/widgets/carts/restaurant_cart.dart';
+import 'package:f_food_delivery/scr/presentation/carts/restaurant_cart.dart';
 import 'package:flutter/material.dart';
 
 class RestaurantList extends StatelessWidget {

@@ -1,6 +1,6 @@
 import 'package:f_food_delivery/scr/presentation/constant/dummy_data.dart';
 import 'package:f_food_delivery/scr/presentation/constant/images.dart';
-import 'package:f_food_delivery/scr/presentation/profile_favorites_list.dart';
+import 'package:f_food_delivery/scr/presentation/list/profile_favorites_list.dart';
 import 'package:f_food_delivery/scr/presentation/widgets/app_text.dart';
 import 'package:flutter/material.dart';
 

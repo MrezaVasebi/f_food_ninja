@@ -1,8 +1,8 @@
 import 'package:f_food_delivery/scr/presentation/constant/dummy_data.dart';
 import 'package:f_food_delivery/scr/presentation/constant/images.dart';
-import 'package:f_food_delivery/scr/presentation/testimonials_list.dart';
+import 'package:f_food_delivery/scr/presentation/list/res_detail_popular_list.dart';
+import 'package:f_food_delivery/scr/presentation/list/testimonials_list.dart';
 import 'package:f_food_delivery/scr/presentation/widgets/app_text.dart';
-import 'package:f_food_delivery/scr/presentation/widgets/carts/res_detail_popular_car.dart';
 import 'package:f_food_delivery/scr/presentation/widgets/home_category_more.dart';
 import 'package:flutter/material.dart';
 
@@ -138,17 +138,8 @@ class RestaurantDetails extends StatelessWidget {
                         SizedBox(
                           height: 191,
                           width: double.infinity,
-                          child: ListView.separated(
-                            shrinkWrap: true,
-                            scrollDirection: Axis.horizontal,
-                            itemCount: resDetailsPopular.length,
-                            separatorBuilder: (context, index) {
-                              return const SizedBox(width: 20);
-                            },
-                            itemBuilder: (context, index) {
-                              final item = resDetailsPopular[index];
-                              return ResDetailPopularCar(item: item);
-                            },
+                          child: ResDetailPopularList(
+                            list: resDetailsPopular,
                           ),
                         ),
                         const SizedBox(height: 20),

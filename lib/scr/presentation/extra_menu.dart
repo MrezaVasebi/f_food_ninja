@@ -1,12 +1,12 @@
 import 'package:f_food_delivery/scr/presentation/constant/dummy_data.dart';
-import 'package:f_food_delivery/scr/presentation/menu_list.dart';
+import 'package:f_food_delivery/scr/presentation/list/menu_list.dart';
 import 'package:f_food_delivery/scr/presentation/widgets/app_text.dart';
 import 'package:f_food_delivery/scr/presentation/widgets/home_filter.dart';
 import 'package:f_food_delivery/scr/presentation/widgets/home_header.dart';
 import 'package:flutter/material.dart';
 
-class ExtraMenuList extends StatelessWidget {
-  const ExtraMenuList({super.key});
+class ExtraMenu extends StatelessWidget {
+  const ExtraMenu({super.key});
 
   @override
   Widget build(BuildContext context) {
