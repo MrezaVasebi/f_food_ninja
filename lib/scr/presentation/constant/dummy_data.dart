@@ -104,3 +104,30 @@ final List profileFavoritesList = [
     'price': '\$35',
   },
 ];
+
+final List resDetailsPopular = [
+  {'img': PngImages.resDetail, 'name': 'Spacy fresh crab', 'price': '12\$'},
+  {'img': PngImages.resDetailOne, 'name': 'Spacy fresh crab', 'price': '12\$'},
+  {'img': PngImages.resDetail, 'name': 'Spacy fresh crab', 'price': '12\$'},
+];
+
+final List testimonialsList = [
+  {
+    'img': PngImages.userOne,
+    'name': 'Dianne Russell',
+    'date': '12 April 2021',
+    'msg': 'This Is great, So delicious! You Must Here, With Your family',
+  },
+  {
+    'img': PngImages.userTwo,
+    'name': 'Dianne Russell',
+    'date': '12 April 2021',
+    'msg': 'This Is great, So delicious! You Must Here, With Your family',
+  },
+  {
+    'img': PngImages.userThree,
+    'name': 'Dianne Russell',
+    'date': '12 April 2021',
+    'msg': 'This Is great, So delicious! You Must Here, With Your family',
+  },
+];

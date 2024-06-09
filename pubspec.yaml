@@ -100,6 +100,14 @@ flutter:
       - assets/images/profile_favorite_one.png
       - assets/images/profile_favorite_two.png
       - assets/images/profile_favorite_three.png
+      - assets/images/menu_details.png
+      - assets/images/res_details.png
+      - assets/images/pinLocation.png
+      - assets/images/heart.png
+      - assets/images/map_pin.png
+      - assets/images/star.png
+      - assets/images/res_detail.png
+      - assets/images/res_detail_one.png
       # - images/a_dot_ham.jpeg
 
    # An image asset can refer to one or more resolution-specific "variants", see
