@@ -131,3 +131,48 @@ final List testimonialsList = [
     'msg': 'This Is great, So delicious! You Must Here, With Your family',
   },
 ];
+
+final List orderList = [
+  {
+    'img': PngImages.menuOne,
+    'name': 'Spacy fresh crab',
+    'desc': 'Waroenk kita',
+    'price': '\$ 35'
+  },
+  {
+    'img': PngImages.menuTwo,
+    'name': 'Spacy fresh crab',
+    'desc': 'Waroenk kita',
+    'price': '\$ 35'
+  },
+  {
+    'img': PngImages.menuThree,
+    'name': 'Spacy fresh crab',
+    'desc': 'Waroenk kita',
+    'price': '\$ 35'
+  },
+  // {
+  //   'img': PngImages.profileFavoriteTwo,
+  //   'name': 'Spacy fresh crab',
+  //   'desc': 'Waroenk kita',
+  //   'price': '\$ 35'
+  // },
+  // {
+  //   'img': PngImages.profileFavoriteThree,
+  //   'name': 'Spacy fresh crab',
+  //   'desc': 'Waroenk kita',
+  //   'price': '\$ 35'
+  // },
+  // {
+  //   'img': PngImages.menuThree,
+  //   'name': 'Spacy fresh crab',
+  //   'desc': 'Waroenk kita',
+  //   'price': '\$ 35'
+  // },
+  // {
+  //   'img': PngImages.profileFavoriteTwo,
+  //   'name': 'Spacy fresh crab',
+  //   'desc': 'Waroenk kita',
+  //   'price': '\$ 35'
+  // },
+];

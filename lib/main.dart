@@ -1,4 +1,4 @@
-import 'package:f_food_delivery/scr/presentation/list/voucher_list.dart';
+import 'package:f_food_delivery/scr/presentation/orders.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.white,
-        body: VoucherList(),
+        body: Orders(),
       ),
     );
   }
