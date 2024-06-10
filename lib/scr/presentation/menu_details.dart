@@ -1,6 +1,7 @@
 import 'package:f_food_delivery/scr/presentation/constant/dummy_data.dart';
 import 'package:f_food_delivery/scr/presentation/constant/images.dart';
 import 'package:f_food_delivery/scr/presentation/list/testimonials_list.dart';
+import 'package:f_food_delivery/scr/presentation/widgets/app_button.dart';
 import 'package:f_food_delivery/scr/presentation/widgets/app_text.dart';
 import 'package:flutter/material.dart';
 
@@ -165,6 +166,12 @@ class MenuDetails extends StatelessWidget {
                             overflow: TextOverflow.ellipsis,
                             fontSize: 12,
                           ),
+                        ),
+                        const SizedBox(height: 20),
+                        AppButton(
+                          lbl: 'Add To Chart',
+                          onPressed: () {},
+                          width: double.infinity,
                         ),
                         const SizedBox(height: 20),
                         const AppText(

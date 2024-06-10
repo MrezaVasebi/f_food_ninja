@@ -38,7 +38,7 @@ class ChatHeader extends StatelessWidget {
               onTap: () {},
               child: const Icon(
                 Icons.chevron_left_rounded,
-                color: Colors.deepOrange,
+                color: Color.fromARGB(255, 239, 81, 33),
                 size: 30,
               ),
             ),

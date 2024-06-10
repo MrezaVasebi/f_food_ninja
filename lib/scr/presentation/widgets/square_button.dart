@@ -14,7 +14,7 @@ class SquareButton extends StatelessWidget {
         width: 45,
         height: 45,
         decoration: BoxDecoration(
-          color: Colors.red[50],
+          color: const Color.fromARGB(255, 248, 242, 243),
           borderRadius: BorderRadius.circular(15),
         ),
         child: child,
