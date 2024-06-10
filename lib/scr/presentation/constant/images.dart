@@ -45,11 +45,12 @@ class PngImages {
   static const String profileFavoriteThree =
       '$_path/profile_favorite_three.png';
   static const String resDetails = '$_path/res_details.png';
-  static const String menuDetails = '$_path/menuDetails.png';
+  static const String menuDetails = '$_path/menu_details.png';
   static const String pinLocation = '$_path/pinLocation.png';
   static const String heart = '$_path/heart.png';
   static const String mapPin = '$_path/map_pin.png';
   static const String star = '$_path/star.png';
   static const String resDetail = '$_path/res_detail.png';
   static const String resDetailOne = '$_path/res_detail_one.png';
+  static const String shoppingBag = '$_path/shopping-bag.png';
 }
