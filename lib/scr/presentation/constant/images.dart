@@ -55,4 +55,5 @@ class PngImages {
   static const String shoppingBag = '$_path/shopping-bag.png';
   static const String voucherOne = '$_path/voucherOne.png';
   static const String voucherTwo = '$_path/voucherTwo.png';
+  static const String placeOrder = '$_path/placeOrder.png';
 }

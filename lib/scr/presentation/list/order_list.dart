@@ -9,14 +9,15 @@ class OrderList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.separated(
-        shrinkWrap: true,
-        itemBuilder: (context, index) {
-          final item = list[index];
-          return OrderCart(item: item);
-        },
-        separatorBuilder: (context, index) {
-          return const SizedBox(height: 20);
-        },
-        itemCount: list.length);
+      shrinkWrap: true,
+      itemBuilder: (context, index) {
+        final item = list[index];
+        return OrderCart(item: item);
+      },
+      separatorBuilder: (context, index) {
+        return const SizedBox(height: 10);
+      },
+      itemCount: list.length,
+    );
   }
 }

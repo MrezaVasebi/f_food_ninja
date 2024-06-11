@@ -14,7 +14,10 @@ class OrderCart extends StatelessWidget {
         width: 50,
         color: Colors.red,
         alignment: Alignment.centerRight,
-        child: const Icon(Icons.delete, color: Colors.white),
+        child: const Icon(
+          Icons.delete,
+          color: Colors.white,
+        ),
       ),
       secondaryBackground: Container(
         width: 50,
@@ -49,7 +52,11 @@ class OrderCart extends StatelessWidget {
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(22),
-          border: Border.all(color: Colors.grey, width: .3),
+          border: Border.all(
+            color: Colors.grey,
+            width: .3,
+            style: BorderStyle.solid,
+          ),
         ),
         child: Padding(
           padding: const EdgeInsets.all(20),
