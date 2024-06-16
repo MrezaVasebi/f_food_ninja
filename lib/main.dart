@@ -1,4 +1,4 @@
-import 'package:f_food_delivery/scr/presentation/sign_up_process.dart';
+import 'package:f_food_delivery/scr/presentation/menu_details.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.white,
-        body: SignUpProcess(),
+        body: MenuDetails(),
       ),
     );
   }
