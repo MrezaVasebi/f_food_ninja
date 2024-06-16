@@ -60,11 +60,11 @@ class ForgetPassword extends StatelessWidget {
                         decoration: BoxDecoration(
                           boxShadow: const [
                             BoxShadow(
-                              color: Color.fromARGB(255, 207, 206, 206),
-                              blurRadius: 15.0, // soften the shadow
-                              spreadRadius: 1.0, //extend the shadow
+                              color: Color.fromARGB(255, 229, 225, 225),
+                              blurRadius: 1.0, // soften the shadow
+                              spreadRadius: 1, //extend the shadow
                               offset: Offset(
-                                2.0, // Move to right 10  horizontally
+                                2.0, // Move to right 20  horizontally
                                 2.0, // Move to bottom 10 Vertically
                               ),
                             )

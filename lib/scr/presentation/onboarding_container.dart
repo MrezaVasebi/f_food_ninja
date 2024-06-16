@@ -72,9 +72,7 @@ class _OnboardingContainerState extends State<OnboardingContainer> {
                             fontSize: 15,
                           ),
                         ),
-                        const SizedBox(
-                          height: 42,
-                        ),
+                        const SizedBox(height: 42),
                         if (!onBoardingOne)
                           AppButton(
                             lbl: 'Next',

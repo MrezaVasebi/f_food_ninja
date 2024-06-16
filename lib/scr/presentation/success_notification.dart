@@ -4,7 +4,9 @@ import 'package:f_food_delivery/scr/presentation/widgets/app_text.dart';
 import 'package:flutter/material.dart';
 
 class SuccessNotification extends StatelessWidget {
-  const SuccessNotification({super.key});
+  const SuccessNotification({this.msg, super.key});
+
+  final String? msg;
 
   @override
   Widget build(BuildContext context) {
@@ -29,12 +31,12 @@ class SuccessNotification extends StatelessWidget {
                       child: Image.asset(PngImages.success)),
                 ),
               ),
-              const Expanded(
+              Expanded(
                 flex: 1,
                 child: Column(
                   children: [
-                    SizedBox(height: 33),
-                    AppText(
+                    const SizedBox(height: 33),
+                    const AppText(
                       lbl: 'Congrats!',
                       style: TextStyle(
                         fontSize: 30,
@@ -42,10 +44,10 @@ class SuccessNotification extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    SizedBox(height: 12),
+                    const SizedBox(height: 12),
                     AppText(
-                      lbl: 'Password reset successfully',
-                      style: TextStyle(
+                      lbl: msg,
+                      style: const TextStyle(
                         fontSize: 23,
                         fontWeight: FontWeight.bold,
                       ),

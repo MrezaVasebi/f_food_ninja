@@ -8,57 +8,92 @@ class ResetPassword extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Expanded(
-          flex: 1,
-          child: Column(
-            children: [
-              SignUpProcessHeader(
-                  onTap: () {},
-                  title: 'Reset your password here',
-                  desc:
-                      'Select which contact details should we use to reset your password'),
-              const SizedBox(
-                height: 40,
+    return SizedBox(
+      height: MediaQuery.of(context).size.height,
+      width: double.infinity,
+      child: Expanded(
+        flex: 1,
+        child: Column(
+          children: [
+            SizedBox(
+              // padding: const EdgeInsets.only(bottom: 38),
+              // height: MediaQuery.of(context).size.height * 0.2,
+              child: SignUpProcessHeader(
+                onTap: () {},
+                title: 'Reset your password here',
+                desc:
+                    'Select which contact details should we use to reset your password',
               ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 20),
-                child: Column(
-                  children: [
-                    AppInput(
-                      onChanged: (p0) {},
-                      hintText: 'New Password',
-                      suffixIcon: const Icon(
-                        Icons.visibility,
-                        color: Colors.greenAccent,
-                      ),
+            ),
+            // const SizedBox(height: 40),
+            Expanded(
+              flex: 1,
+              child: SizedBox(
+                // color: Colors.red,
+                height: MediaQuery.of(context).size.height,
+                width: double.infinity,
+                child: SingleChildScrollView(
+                  child: Padding(
+                    padding: const EdgeInsets.all(20),
+                    child: Column(
+                      children: [
+                        SizedBox(
+                          // color: Colors.green,
+                          width: double.infinity,
+                          height: MediaQuery.of(context).size.height * 0.6,
+                          child: Column(
+                            children: [
+                              AppInput(
+                                br: 22,
+                                onChanged: (p0) {},
+                                hintText: 'New Password',
+                                suffixIcon: const Icon(
+                                  Icons.visibility,
+                                  color: Colors.greenAccent,
+                                ),
+                                style: const TextStyle(
+                                  fontSize: 20,
+                                ),
+                              ),
+                              const SizedBox(
+                                height: 20,
+                              ),
+                              AppInput(
+                                br: 22,
+                                style: const TextStyle(
+                                  fontSize: 20,
+                                ),
+                                onChanged: (p0) {},
+                                hintText: 'Confirm Password',
+                                suffixIcon: Icon(
+                                  Icons.visibility,
+                                  color: Colors.grey[400],
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                        SizedBox(
+                          // color: Colors.yellow,
+                          // width: double.infinity,
+                          height: MediaQuery.of(context).size.height * 0.2,
+                          child: Align(
+                            alignment: Alignment.center,
+                            child: AppButton(
+                              lbl: "Next",
+                              onPressed: () {},
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
-                    const SizedBox(
-                      height: 20,
-                    ),
-                    AppInput(
-                      onChanged: (p0) {},
-                      hintText: 'Confirm Password',
-                      suffixIcon: Icon(
-                        Icons.visibility,
-                        color: Colors.grey[400],
-                      ),
-                    )
-                  ],
+                  ),
                 ),
-              )
-            ],
-          ),
+              ),
+            ),
+          ],
         ),
-        Padding(
-          padding: const EdgeInsets.only(bottom: 60),
-          child: AppButton(
-            lbl: 'Next',
-            onPressed: () {},
-          ),
-        )
-      ],
+      ),
     );
   }
 }
