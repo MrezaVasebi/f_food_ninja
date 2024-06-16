@@ -43,9 +43,7 @@ class HomeFilter extends StatelessWidget {
             ),
           ),
         ),
-        const SizedBox(
-          width: 10,
-        ),
+        const SizedBox(width: 10),
         showFilter
             ? SquareButton(
                 child: Image.asset(PngImages.filter),
