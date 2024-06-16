@@ -26,42 +26,49 @@ class SignInUpRootWidget extends StatelessWidget {
       child: SizedBox(
         child: Expanded(
           flex: 1,
-          child: SingleChildScrollView(
-            child: Column(
-              children: [
-                SizedBox(
-                  height: MediaQuery.of(context).size.height * .2,
-                  width: double.infinity,
-                  // color: Colors.white,
-                  child: SignUpProcessHeader(
-                    onTap: onTapBack,
-                    title: title,
-                    desc: desc,
+          child: Column(
+            children: [
+              SizedBox(
+                // height: MediaQuery.of(context).size.height * .2,
+                width: double.infinity,
+                // color: Colors.white,
+                child: SignUpProcessHeader(
+                  onTap: onTapBack,
+                  title: title,
+                  desc: desc,
+                ),
+              ),
+              Expanded(
+                flex: 1,
+                child: SingleChildScrollView(
+                  child: Column(
+                    children: [
+                      SizedBox(
+                        width: double.infinity,
+                        // color: Colors.yellow,
+                        height: MediaQuery.of(context).size.height * .65,
+                        child: Padding(
+                          padding: const EdgeInsets.all(20),
+                          child: bodyChild,
+                        ),
+                      ),
+                      SizedBox(
+                        width: double.infinity,
+                        // color: Colors.pink,
+                        height: MediaQuery.of(context).size.height * .15,
+                        child: Align(
+                          alignment: Alignment.center,
+                          child: AppButton(
+                            lbl: 'Next',
+                            onPressed: onPressedBtn,
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
                 ),
-                SizedBox(
-                  width: double.infinity,
-                  // color: Colors.yellow,
-                  height: MediaQuery.of(context).size.height * .65,
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 20),
-                    child: bodyChild,
-                  ),
-                ),
-                SizedBox(
-                  width: double.infinity,
-                  // color: Colors.pink,
-                  height: MediaQuery.of(context).size.height * .15,
-                  child: Align(
-                    alignment: Alignment.center,
-                    child: AppButton(
-                      lbl: 'Next',
-                      onPressed: onPressedBtn,
-                    ),
-                  ),
-                ),
-              ],
-            ),
+              ),
+            ],
           ),
         ),
       ),

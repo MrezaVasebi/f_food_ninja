@@ -1,5 +1,6 @@
 import 'package:f_food_delivery/scr/presentation/constant/images.dart';
 import 'package:f_food_delivery/scr/presentation/widgets/app_text.dart';
+import 'package:f_food_delivery/scr/presentation/widgets/square_button.dart';
 import 'package:flutter/material.dart';
 
 class SignUpProcessHeader extends StatelessWidget {
@@ -29,21 +30,13 @@ class SignUpProcessHeader extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          InkWell(
+          SquareButton(
             onTap: onTap,
-            child: Container(
-              width: 45,
-              height: 45,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(15),
-                color: const Color.fromARGB(255, 241, 221, 221),
-              ),
-              child: const Center(
-                child: Icon(
-                  size: 32,
-                  Icons.chevron_left,
-                  color: Colors.red,
-                ),
+            child: const Center(
+              child: Icon(
+                size: 32,
+                Icons.chevron_left,
+                color: Colors.red,
               ),
             ),
           ),

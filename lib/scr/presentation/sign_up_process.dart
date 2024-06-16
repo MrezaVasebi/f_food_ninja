@@ -14,7 +14,6 @@ class SignUpProcess extends StatelessWidget {
       onTapBack: () {},
       bodyChild: Column(
         children: [
-          const SizedBox(height: 20),
           AppInput(
             onChanged: (value) {},
             hintText: 'First Name',
