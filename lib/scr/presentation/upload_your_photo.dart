@@ -15,8 +15,12 @@ class UploadYourPhoto extends StatelessWidget {
 
     return SignInUpRootWidget(
       desc: 'This data will be displayed in your account profile for security',
-      onPressedBtn: () {},
-      onTapBack: () {},
+      onPressedBtn: () {
+        Navigator.pushNamed(context, '/yourLocation');
+      },
+      onTapBack: () {
+        Navigator.pop(context);
+      },
       title: 'Upload Your Photo Profile',
       bodyChild: ListView.separated(
         shrinkWrap: true,

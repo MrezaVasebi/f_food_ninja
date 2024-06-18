@@ -10,8 +10,12 @@ class VerificationCode extends StatelessWidget {
     return SignInUpRootWidget(
       desc: 'Code send to +6282045**** . This code will expired in 01:30',
       title: 'Enter 4-digit Verification code',
-      onPressedBtn: () {},
-      onTapBack: () {},
+      onPressedBtn: () {
+        Navigator.pushNamed(context, '/resetPassword');
+      },
+      onTapBack: () {
+        Navigator.pop(context);
+      },
       bodyChild: TextField(
         keyboardType: TextInputType.number,
         cursorColor: Colors.black,

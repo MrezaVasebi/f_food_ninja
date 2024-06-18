@@ -1,5 +1,6 @@
 import 'package:f_food_delivery/scr/presentation/constant/images.dart';
 import 'package:f_food_delivery/scr/presentation/sign_in_up_root_widget.dart';
+import 'package:f_food_delivery/scr/presentation/success_notification.dart';
 import 'package:f_food_delivery/scr/presentation/widgets/app_text.dart';
 import 'package:flutter/material.dart';
 
@@ -11,15 +12,25 @@ class YourLocation extends StatelessWidget {
     return SignInUpRootWidget(
       desc: 'This data will be displayed in your account profile for security',
       title: 'Set Your Location',
-      onPressedBtn: () {},
-      onTapBack: () {},
+      onPressedBtn: () {
+        Navigator.push(context, MaterialPageRoute(
+          builder: (context) {
+            return const SuccessNotification(
+              msg: 'Your Profile Is Ready To Use',
+            );
+          },
+        ));
+      },
+      onTapBack: () {
+        Navigator.pop(context);
+      },
       bodyChild: Align(
         alignment: Alignment.topCenter,
         child: Container(
           height: 147,
           width: double.infinity,
           decoration: BoxDecoration(
-            color: Colors.red,
+            color: Colors.white,
             boxShadow: const [
               BoxShadow(
                 color: Color.fromARGB(255, 229, 225, 225),

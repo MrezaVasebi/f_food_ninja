@@ -10,8 +10,12 @@ class SignUpProcess extends StatelessWidget {
     return SignInUpRootWidget(
       title: 'Fill in your bio to get started',
       desc: 'This data will be displayed in your account profile for security',
-      onPressedBtn: () {},
-      onTapBack: () {},
+      onPressedBtn: () {
+        Navigator.pushNamed(context, '/paymentMethod');
+      },
+      onTapBack: () {
+        Navigator.pop(context);
+      },
       bodyChild: Column(
         children: [
           AppInput(
