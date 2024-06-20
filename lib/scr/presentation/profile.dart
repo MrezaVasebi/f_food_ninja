@@ -82,7 +82,9 @@ class Profile extends StatelessWidget {
               ],
             ),
             child: InkWell(
-              onTap: () {},
+              onTap: () {
+                Navigator.pushNamed(context, '/voucherList');
+              },
               child: Padding(
                 padding:
                     const EdgeInsets.symmetric(vertical: 10, horizontal: 20),

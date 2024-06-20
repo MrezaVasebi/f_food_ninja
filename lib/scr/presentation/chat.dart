@@ -14,8 +14,9 @@ class Chat extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Header(
+          const Header(
             title: 'Chats',
+            showBackBtn: false,
           ),
           const SizedBox(height: 20),
           Expanded(

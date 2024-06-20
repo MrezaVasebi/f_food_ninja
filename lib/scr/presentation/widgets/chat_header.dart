@@ -4,17 +4,15 @@ import 'package:f_food_delivery/scr/presentation/widgets/header.dart';
 import 'package:flutter/material.dart';
 
 class ChatHeader extends StatelessWidget {
-  const ChatHeader(
-      {this.onTapCall, this.onTapBack, this.title = 'Chat', super.key});
+  const ChatHeader({this.title = 'Chat', super.key});
 
   final String title;
-  final Function()? onTapCall;
-  final Function()? onTapBack;
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 260,
+      // height: 260,
+      padding: const EdgeInsets.only(bottom: 20),
       width: double.infinity,
       decoration: const BoxDecoration(
         image: DecorationImage(
@@ -32,7 +30,7 @@ class ChatHeader extends StatelessWidget {
           ),
           Container(
             height: 81,
-            margin: const EdgeInsets.only(top: 20),
+            margin: const EdgeInsets.only(left: 20, right: 20),
             width: double.infinity,
             decoration: BoxDecoration(
               color: Colors.white,
@@ -84,7 +82,9 @@ class ChatHeader extends StatelessWidget {
                     ],
                   ),
                   InkWell(
-                    onTap: onTapCall,
+                    onTap: () {
+                      Navigator.pushNamed(context, '/callRinging');
+                    },
                     child: Container(
                       height: 40,
                       width: 40,

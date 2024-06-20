@@ -14,6 +14,10 @@ class MenuDetails extends StatelessWidget {
     final List material = ['Strawberry', 'Cream', 'Wheat'];
 
     return DetailsRootWidget(
+      onTapClose: () {
+        Navigator.pop(context);
+      },
+      showCloseBtn: true,
       topWidget: Image.asset(
         PngImages.menuDetails,
         fit: BoxFit.cover,

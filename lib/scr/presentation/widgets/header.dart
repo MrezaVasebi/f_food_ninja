@@ -4,9 +4,10 @@ import 'package:f_food_delivery/scr/presentation/widgets/square_button.dart';
 import 'package:flutter/material.dart';
 
 class Header extends StatelessWidget {
-  const Header({this.title, super.key});
+  const Header({this.title, this.showBackBtn = true, super.key});
 
   final String? title;
+  final bool showBackBtn;
 
   @override
   Widget build(BuildContext context) {
@@ -31,16 +32,18 @@ class Header extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            SquareButton(
-              onTap: () {
-                Navigator.pop(context);
-              },
-              child: const Icon(
-                Icons.chevron_left_rounded,
-                color: Color.fromARGB(255, 239, 81, 33),
-                size: 30,
-              ),
-            ),
+            showBackBtn
+                ? SquareButton(
+                    onTap: () {
+                      Navigator.pop(context);
+                    },
+                    child: const Icon(
+                      Icons.chevron_left_rounded,
+                      color: Color.fromARGB(255, 239, 81, 33),
+                      size: 30,
+                    ),
+                  )
+                : Container(),
             const SizedBox(height: 20),
             AppText(
               lbl: title,

@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 
 class RingButton extends StatelessWidget {
-  const RingButton({this.bgColor, this.child, super.key});
+  const RingButton({this.onTap, this.bgColor, this.child, super.key});
 
   final Color? bgColor;
   final Widget? child;
+  final Function()? onTap;
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +17,7 @@ class RingButton extends StatelessWidget {
         borderRadius: BorderRadius.circular(35),
       ),
       child: InkWell(
-        onTap: () {},
+        onTap: onTap,
         child: child,
       ),
     );

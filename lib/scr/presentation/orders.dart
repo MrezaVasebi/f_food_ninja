@@ -47,7 +47,9 @@ class Orders extends StatelessWidget {
                     color: Color.fromARGB(255, 239, 81, 33),
                     size: 30,
                   ),
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.pushNamed(context, '/orderDetails');
+                  },
                 ),
               ],
             ),

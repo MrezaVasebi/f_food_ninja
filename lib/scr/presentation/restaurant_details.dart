@@ -13,6 +13,10 @@ class RestaurantDetails extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DetailsRootWidget(
+      onTapClose: () {
+        Navigator.pop(context);
+      },
+      showCloseBtn: true,
       topWidget: Image.asset(
         PngImages.resDetails,
         fit: BoxFit.cover,
