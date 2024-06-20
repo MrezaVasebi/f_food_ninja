@@ -1,6 +1,6 @@
 import 'package:f_food_delivery/scr/presentation/constant/images.dart';
 import 'package:f_food_delivery/scr/presentation/widgets/app_button.dart';
-import 'package:f_food_delivery/scr/presentation/widgets/chat_header.dart';
+import 'package:f_food_delivery/scr/presentation/widgets/header.dart';
 import 'package:flutter/material.dart';
 
 class VoucherList extends StatelessWidget {
@@ -17,9 +17,7 @@ class VoucherList extends StatelessWidget {
         flex: 1,
         child: Column(
           children: [
-            ChatHeader(
-              onTap: () {},
-              userSelected: false,
+            const Header(
               title: 'Voucher Promo',
             ),
             Expanded(

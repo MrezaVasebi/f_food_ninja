@@ -1,3 +1,8 @@
+import 'package:f_food_delivery/scr/presentation/bottom_navigation.dart';
+import 'package:f_food_delivery/scr/presentation/extra_menu.dart';
+import 'package:f_food_delivery/scr/presentation/extra_restaurant.dart';
+import 'package:f_food_delivery/scr/presentation/filter_section.dart';
+import 'package:f_food_delivery/scr/presentation/notif.dart';
 import 'package:f_food_delivery/scr/presentation/onboarding_container.dart';
 import 'package:f_food_delivery/scr/presentation/payment_method.dart';
 import 'package:f_food_delivery/scr/presentation/reset_password.dart';
@@ -42,19 +47,24 @@ class MyApp extends StatelessWidget {
             ),
         '/verificationCode': (context) => const VerificationCode(),
         '/resetPassword': (context) => const ResetPassword(),
+        '/bottomNavigation': (context) => const BottomNavigation(),
+        '/notif': (context) => const Notif(),
+        '/filterSection': (context) => const FilterSection(),
+        '/extraRestaurant': (context) => const ExtraRestaurant(),
+        '/extraMenu': (context) => const ExtraMenu(),
       },
-      onGenerateRoute: (RouteSettings settings) {
-        if (settings.name == '/successNotification') {
-          final String msg = settings.arguments as String;
-          return MaterialPageRoute(
-            builder: (context) {
-              return SuccessNotification(msg: msg);
-            },
-          );
-        }
+      // onGenerateRoute: (RouteSettings settings) {
+      //   if (settings.name == '/successNotification') {
+      //     final String msg = settings.arguments as String;
+      //     return MaterialPageRoute(
+      //       builder: (context) {
+      //         return SuccessNotification(msg: msg);
+      //       },
+      //     );
+      //   }
 
-        return null;
-      },
+      //   return null;
+      // },
       // home: const Scaffold(
       //   backgroundColor: Colors.white,
       //   body: Splash(),

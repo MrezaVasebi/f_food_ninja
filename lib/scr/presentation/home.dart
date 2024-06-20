@@ -12,6 +12,9 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return HomeRootWidget(
+      onTapNotif: () {
+        Navigator.pushNamed(context, '/notif');
+      },
       restWidget: Column(
         children: [
           ClipRRect(
@@ -25,7 +28,9 @@ class Home extends StatelessWidget {
           ),
           const SizedBox(height: 25),
           HomeCategoryMore(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushNamed(context, '/extraRestaurant');
+            },
             catName: 'Nearest Restaurant',
           ),
           SizedBox(
@@ -36,7 +41,9 @@ class Home extends StatelessWidget {
           ),
           const SizedBox(height: 25),
           HomeCategoryMore(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushNamed(context, '/extraMenu');
+            },
             catName: 'Popular Menu',
           ),
           SizedBox(

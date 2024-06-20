@@ -10,7 +10,7 @@ class ExtraMenu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return HomeRootWidget(
-      showFilter: false,
+      showFilter: true,
       restWidget: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [

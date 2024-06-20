@@ -1,7 +1,7 @@
 import 'package:f_food_delivery/scr/presentation/carts/order_details_cart.dart';
 import 'package:f_food_delivery/scr/presentation/constant/images.dart';
 import 'package:f_food_delivery/scr/presentation/widgets/app_text.dart';
-import 'package:f_food_delivery/scr/presentation/widgets/chat_header.dart';
+import 'package:f_food_delivery/scr/presentation/widgets/header.dart';
 import 'package:flutter/material.dart';
 
 class OrderConfirm extends StatelessWidget {
@@ -20,9 +20,8 @@ class OrderConfirm extends StatelessWidget {
       width: double.infinity,
       child: Column(
         children: [
-          ChatHeader(
+          const Header(
             title: 'Confirm Order',
-            onTap: () {},
           ),
           Expanded(
             flex: 1,

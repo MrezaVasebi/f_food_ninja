@@ -16,16 +16,19 @@ class Orders extends StatelessWidget {
       child: Column(
         children: [
           Container(
-            height: 85,
+            // height: 85,
+            // height: 20,
             width: double.infinity,
             padding: const EdgeInsets.all(20),
             decoration: const BoxDecoration(
-                image: DecorationImage(
-              image: AssetImage(
-                PngImages.backLogo,
+              // color: Colors.red,
+              image: DecorationImage(
+                image: AssetImage(
+                  PngImages.backLogo,
+                ),
+                fit: BoxFit.cover,
               ),
-              fit: BoxFit.cover,
-            )),
+            ),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,

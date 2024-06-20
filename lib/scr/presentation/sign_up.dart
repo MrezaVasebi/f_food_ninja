@@ -90,7 +90,9 @@ class SignUp extends StatelessWidget {
                           const SizedBox(height: 20),
                           AppButton(
                             lbl: 'Login',
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.pushNamed(context, '/bottomNavigation');
+                            },
                           ),
                           const SizedBox(height: 20),
                           AppTextButton(

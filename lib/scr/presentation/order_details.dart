@@ -1,7 +1,7 @@
 import 'package:f_food_delivery/scr/presentation/carts/order_details_cart.dart';
 import 'package:f_food_delivery/scr/presentation/constant/dummy_data.dart';
 import 'package:f_food_delivery/scr/presentation/list/order_list.dart';
-import 'package:f_food_delivery/scr/presentation/widgets/chat_header.dart';
+import 'package:f_food_delivery/scr/presentation/widgets/header.dart';
 import 'package:flutter/material.dart';
 
 class OrderDetails extends StatelessWidget {
@@ -20,9 +20,8 @@ class OrderDetails extends StatelessWidget {
       width: double.infinity,
       child: Column(
         children: [
-          ChatHeader(
+          const Header(
             title: 'Order details',
-            onTap: () {},
           ),
           Expanded(
             flex: 1,

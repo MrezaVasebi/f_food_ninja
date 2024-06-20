@@ -46,7 +46,9 @@ class HomeHeader extends StatelessWidget {
               ),
             ),
             InkWell(
-              onTap: () {},
+              onTap: () {
+                Navigator.pushNamed(context, '/notif');
+              },
               child: Container(
                 width: 45,
                 height: 45,

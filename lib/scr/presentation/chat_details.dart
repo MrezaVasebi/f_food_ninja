@@ -16,8 +16,7 @@ class ChatDetails extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           ChatHeader(
-            userSelected: true,
-            onTap: () {},
+            onTapCall: () {},
           ),
           Expanded(
             flex: 1,

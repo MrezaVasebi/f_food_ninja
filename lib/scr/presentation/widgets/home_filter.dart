@@ -47,7 +47,12 @@ class HomeFilter extends StatelessWidget {
         showFilter
             ? SquareButton(
                 child: Image.asset(PngImages.filter),
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(
+                    context,
+                    '/filterSection',
+                  );
+                },
               )
             : Container(),
       ],
