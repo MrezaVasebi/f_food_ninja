@@ -39,7 +39,7 @@ class OrderCart extends StatelessWidget {
       onDismissed: (direction) {
         if (direction == DismissDirection.endToStart) {
           ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(content: Text('delete action!')),
+            const SnackBar(content: Text('Item Deleted!')),
           );
         } else if (direction == DismissDirection.startToEnd) {
           ScaffoldMessenger.of(context).showSnackBar(

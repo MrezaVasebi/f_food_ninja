@@ -28,7 +28,7 @@ class HomeRootWidget extends StatelessWidget {
               child: SingleChildScrollView(
                 child: Column(
                   children: [
-                    HomeHeader(),
+                    const HomeHeader(),
                     Padding(
                       padding: const EdgeInsets.all(20),
                       child: Column(

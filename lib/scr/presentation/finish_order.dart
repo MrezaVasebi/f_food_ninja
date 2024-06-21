@@ -93,6 +93,7 @@ class FinishOrder extends StatelessWidget {
                   scrollDirection: Axis.horizontal,
                 ),
               ),
+              const SizedBox(height: 50),
               SizedBox(
                 child: Padding(
                   padding: const EdgeInsets.all(20),
@@ -121,7 +122,7 @@ class FinishOrder extends StatelessWidget {
                           const SizedBox(width: 20),
                           InkWell(
                             onTap: () {
-                              Navigator.pop(context);
+                              Navigator.pushNamed(context, '/bottomNavigation');
                             },
                             child: Container(
                               height: 57,

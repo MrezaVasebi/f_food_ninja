@@ -3,6 +3,7 @@ import 'package:f_food_delivery/scr/presentation/home.dart';
 import 'package:f_food_delivery/scr/presentation/orders.dart';
 import 'package:f_food_delivery/scr/presentation/profile.dart';
 import 'package:f_food_delivery/scr/presentation/root_scaffold_widget.dart';
+import 'package:f_food_delivery/scr/presentation/widgets/custom_tab.dart';
 import 'package:flutter/material.dart';
 
 class BottomNavigation extends StatefulWidget {
@@ -22,43 +23,114 @@ class _BottomNavigationState extends State<BottomNavigation> {
     const Chat()
   ];
 
-  _onItemTapped(int index) {
-    setState(() {
-      _selectedIndex = index;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
+    const selectedColor = Colors.green;
+    const unSelectedColor = Color.fromARGB(255, 169, 223, 169);
+
+    List<Map<String, dynamic>> tabs = [
+      {
+        "label": 'Home',
+        "tabIndex": 0,
+        "selectedIcon": const Icon(
+          Icons.home,
+          color: selectedColor,
+        ),
+        "unSelectedIcon": const Icon(
+          Icons.home,
+          color: unSelectedColor,
+        ),
+      },
+      {
+        "label": 'Profile',
+        "tabIndex": 1,
+        "selectedIcon": const Icon(
+          Icons.person,
+          color: selectedColor,
+        ),
+        "unSelectedIcon": const Icon(
+          Icons.person,
+          color: unSelectedColor,
+        ),
+      },
+      {
+        "label": 'Order',
+        "tabIndex": 2,
+        "selectedIcon": const Icon(
+          Icons.shopping_cart,
+          color: selectedColor,
+        ),
+        "unSelectedIcon": const Icon(
+          Icons.shopping_cart,
+          color: unSelectedColor,
+        ),
+      },
+      {
+        "label": 'Chat',
+        "tabIndex": 3,
+        "selectedIcon": const Icon(
+          Icons.chat,
+          color: selectedColor,
+        ),
+        "unSelectedIcon": const Icon(
+          Icons.chat,
+          color: unSelectedColor,
+        ),
+      },
+    ];
+
     return RootScaffoldWidget(
-      bottomNavigationBar: BottomNavigationBar(
-        items: const [
-          BottomNavigationBarItem(
-            label: 'Home',
-            icon: Icon(Icons.home),
-          ),
-          BottomNavigationBarItem(
-            label: 'Profile',
-            icon: Icon(Icons.person),
-          ),
-          BottomNavigationBarItem(
-            label: 'Orders',
-            icon: Icon(Icons.shopping_cart),
-          ),
-          BottomNavigationBarItem(
-            label: 'Chat',
-            icon: Icon(Icons.chat),
-          ),
-        ],
-        currentIndex: _selectedIndex,
-        selectedItemColor: Colors.green,
-        unselectedItemColor: Colors.green,
-        onTap: _onItemTapped,
+      bottomNavigationBar: Container(
+        height: 60,
+        margin: const EdgeInsets.only(
+          left: 20,
+          right: 20,
+          bottom: 35,
+        ),
+        decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(20),
+          boxShadow: const [
+            BoxShadow(
+              color: Color.fromARGB(255, 229, 225, 225),
+              blurRadius: 1.0, // soften the shadow
+              spreadRadius: 1, //extend the shadow
+              offset: Offset(
+                2.0, // Move to right 20  horizontally
+                2.0, // Move to bottom 10 Vertically
+              ),
+            )
+          ],
+        ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            ListView.builder(
+              shrinkWrap: true,
+              scrollDirection: Axis.horizontal,
+              itemCount: tabs.length,
+              itemBuilder: (context, index) {
+                final item = tabs[index];
+
+                return CustomTab(
+                  label: item['label'],
+                  onPressed: () {
+                    setState(() {
+                      _selectedIndex = item['tabIndex'];
+                    });
+                  },
+                  tabIndex: item['tabIndex'],
+                  selectedIndex: _selectedIndex,
+                  selectedIcon: item['selectedIcon'],
+                  unSelectedIcon: item['unSelectedIcon'],
+                );
+              },
+            )
+          ],
+        ),
       ),
-      child: IndexedStack(
-        index: _selectedIndex,
-        children: _widgetOptions,
-      ),
+      child: _widgetOptions[_selectedIndex],
     );
   }
 }
