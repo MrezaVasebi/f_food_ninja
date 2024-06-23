@@ -34,7 +34,7 @@ class Orders extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 const AppText(
-                  lbl: 'Orders',
+                  lbl: 'Your Orders',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     color: Colors.black,

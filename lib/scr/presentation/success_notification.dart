@@ -63,7 +63,11 @@ class SuccessNotification extends StatelessWidget {
           ),
           Padding(
             padding: const EdgeInsets.only(bottom: 60),
-            child: AppButton(lbl: 'Next', onPressed: () {}),
+            child: AppButton(
+                lbl: 'Next',
+                onPressed: () {
+                  Navigator.pushNamed(context, '/bottomNavigation');
+                }),
           )
         ],
       ),

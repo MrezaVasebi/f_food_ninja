@@ -7,7 +7,10 @@ import 'package:f_food_delivery/scr/presentation/widgets/home_category_more.dart
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
-  const Home({super.key});
+  const Home({this.onPressExtraMenu, this.onPressExtraRestaurant, super.key});
+
+  final Function()? onPressExtraMenu;
+  final Function()? onPressExtraRestaurant;
 
   @override
   Widget build(BuildContext context) {
@@ -28,9 +31,10 @@ class Home extends StatelessWidget {
           ),
           const SizedBox(height: 25),
           HomeCategoryMore(
-            onPressed: () {
-              Navigator.pushNamed(context, '/extraRestaurant');
-            },
+            onPressed: onPressExtraRestaurant,
+            // onPressed: () {
+            //   Navigator.pushNamed(context, '/extraRestaurant');
+            // },
             catName: 'Nearest Restaurant',
           ),
           SizedBox(
@@ -41,9 +45,10 @@ class Home extends StatelessWidget {
           ),
           const SizedBox(height: 25),
           HomeCategoryMore(
-            onPressed: () {
-              Navigator.pushNamed(context, '/extraMenu');
-            },
+            onPressed: onPressExtraMenu,
+            // onPressed: () {
+            //   Navigator.pushNamed(context, '/extraMenu');
+            // },
             catName: 'Popular Menu',
           ),
           SizedBox(

@@ -1,5 +1,5 @@
 import 'package:f_food_delivery/scr/presentation/chat.dart';
-import 'package:f_food_delivery/scr/presentation/home.dart';
+import 'package:f_food_delivery/scr/presentation/handle_home_widget.dart';
 import 'package:f_food_delivery/scr/presentation/orders.dart';
 import 'package:f_food_delivery/scr/presentation/profile.dart';
 import 'package:f_food_delivery/scr/presentation/root_scaffold_widget.dart';
@@ -17,7 +17,8 @@ class _BottomNavigationState extends State<BottomNavigation> {
   int _selectedIndex = 0;
 
   static final List<Widget> _widgetOptions = <Widget>[
-    const Home(),
+    // const Home(),
+    const HandleHomeWidget(),
     const Profile(),
     const Orders(),
     const Chat()
@@ -85,7 +86,7 @@ class _BottomNavigationState extends State<BottomNavigation> {
         margin: const EdgeInsets.only(
           left: 20,
           right: 20,
-          bottom: 35,
+          bottom: 20,
         ),
         decoration: BoxDecoration(
           color: Colors.white,
