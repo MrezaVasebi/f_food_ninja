@@ -44,7 +44,10 @@ class OrderDetails extends StatelessWidget {
                 details: details,
                 total: '150 \$',
                 onPressed: () {
-                  Navigator.pushNamed(context, '/orderConfirm');
+                  Navigator.pushNamed(
+                    context,
+                    '/orderConfirm',
+                  );
                 },
               ),
             )

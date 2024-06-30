@@ -1,7 +1,6 @@
 import 'package:f_food_delivery/scr/presentation/extra_menu.dart';
 import 'package:f_food_delivery/scr/presentation/extra_restaurant.dart';
 import 'package:f_food_delivery/scr/presentation/home.dart';
-import 'package:f_food_delivery/scr/presentation/root_scaffold_widget.dart';
 import 'package:flutter/material.dart';
 
 class HandleHomeWidget extends StatefulWidget {
@@ -16,7 +15,6 @@ class _HandleHomeWidgetState extends State<HandleHomeWidget> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
 
     selectedWidget = Home(

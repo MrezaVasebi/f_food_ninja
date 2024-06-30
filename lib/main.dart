@@ -75,22 +75,6 @@ class MyApp extends StatelessWidget {
         '/orderConfirm': (context) => const OrderConfirm(),
         '/finishOrder': (context) => const FinishOrder(),
       },
-      // onGenerateRoute: (RouteSettings settings) {
-      //   if (settings.name == '/successNotification') {
-      //     final String msg = settings.arguments as String;
-      //     return MaterialPageRoute(
-      //       builder: (context) {
-      //         return SuccessNotification(msg: msg);
-      //       },
-      //     );
-      //   }
-
-      //   return null;
-      // },
-      // home: const Scaffold(
-      //   backgroundColor: Colors.white,
-      //   body: Splash(),
-      // ),
     );
   }
 }
