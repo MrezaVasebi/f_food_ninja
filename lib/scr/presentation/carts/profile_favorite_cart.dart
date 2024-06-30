@@ -1,3 +1,4 @@
+import 'package:f_food_delivery/scr/presentation/constant/app_colors.dart';
 import 'package:f_food_delivery/scr/presentation/widgets/app_text.dart';
 import 'package:flutter/material.dart';
 
@@ -75,7 +76,10 @@ class ProfileFavoriteCart extends StatelessWidget {
               height: 29,
               width: 85,
               decoration: BoxDecoration(
-                color: Colors.greenAccent,
+                gradient: const LinearGradient(colors: [
+                  AppColors.lightGreen,
+                  AppColors.darkGreen,
+                ]),
                 borderRadius: BorderRadius.circular(17.5),
               ),
               child: const Center(

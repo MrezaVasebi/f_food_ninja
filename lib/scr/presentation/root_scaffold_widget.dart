@@ -11,7 +11,7 @@ class RootScaffoldWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: child,
-      backgroundColor: Colors.white,
+      // backgroundColor: Colors.white,
       bottomNavigationBar: bottomNavigationBar,
     );
   }

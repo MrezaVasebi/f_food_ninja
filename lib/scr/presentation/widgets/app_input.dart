@@ -1,3 +1,4 @@
+import 'package:f_food_delivery/scr/presentation/constant/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class AppInput extends StatelessWidget {
@@ -45,7 +46,7 @@ class AppInput extends StatelessWidget {
         enabledBorder: enabledBorder ??
             OutlineInputBorder(
               borderSide: const BorderSide(
-                color: Colors.grey,
+                color: AppColors.grey,
                 width: .5,
               ),
               borderRadius: BorderRadius.circular(br ?? 15),
@@ -53,7 +54,7 @@ class AppInput extends StatelessWidget {
         focusedBorder: focusedBorder ??
             OutlineInputBorder(
               borderSide: const BorderSide(
-                color: Colors.grey,
+                color: AppColors.grey,
                 width: 1,
               ),
               borderRadius: BorderRadius.circular(br ?? 15),

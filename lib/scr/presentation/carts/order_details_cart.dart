@@ -1,4 +1,6 @@
+import 'package:f_food_delivery/scr/presentation/constant/app_colors.dart';
 import 'package:f_food_delivery/scr/presentation/widgets/app_text.dart';
+import 'package:f_food_delivery/scr/presentation/widgets/gradient_text.dart';
 import 'package:flutter/material.dart';
 
 class OrderDetailsCart extends StatelessWidget {
@@ -21,8 +23,8 @@ class OrderDetailsCart extends StatelessWidget {
         borderRadius: BorderRadius.circular(16),
         gradient: const LinearGradient(
           colors: [
-            Colors.greenAccent,
-            Colors.green,
+            AppColors.lightGreen,
+            AppColors.darkGreen,
           ],
         ),
       ),
@@ -87,13 +89,8 @@ class OrderDetailsCart extends StatelessWidget {
                   borderRadius: BorderRadius.circular(15),
                 ),
               ),
-              child: const AppText(
-                lbl: 'Place My Order',
-                style: TextStyle(
-                  color: Colors.green,
-                  fontSize: 14,
-                  fontWeight: FontWeight.bold,
-                ),
+              child: const GradientText(
+                'Place My Order',
               ),
             )
           ],

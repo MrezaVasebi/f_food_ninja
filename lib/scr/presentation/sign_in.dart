@@ -5,7 +5,7 @@ import 'package:f_food_delivery/scr/presentation/widgets/app_button.dart';
 import 'package:f_food_delivery/scr/presentation/widgets/app_input.dart';
 import 'package:f_food_delivery/scr/presentation/widgets/app_radio_button.dart';
 import 'package:f_food_delivery/scr/presentation/widgets/app_text.dart';
-import 'package:f_food_delivery/scr/presentation/widgets/app_text_button.dart';
+import 'package:f_food_delivery/scr/presentation/widgets/gradient_text.dart';
 import 'package:flutter/material.dart';
 
 class SignIn extends StatelessWidget {
@@ -81,9 +81,9 @@ class SignIn extends StatelessWidget {
                             },
                           ),
                           const SizedBox(height: 20),
-                          AppTextButton(
+                          GradientText(
                             'already have an account?',
-                            () {
+                            onTap: () {
                               Navigator.pop(context);
                             },
                           )

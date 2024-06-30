@@ -1,3 +1,4 @@
+import 'package:f_food_delivery/scr/presentation/constant/app_colors.dart';
 import 'package:f_food_delivery/scr/presentation/widgets/app_text.dart';
 import 'package:flutter/material.dart';
 
@@ -25,11 +26,14 @@ class AppRadioButton extends StatelessWidget {
             height: 25,
             margin: const EdgeInsets.only(right: 15),
             decoration: BoxDecoration(
-              color: Colors.greenAccent,
-              border: Border.all(
-                color: Colors.grey,
-                width: isSelected ? .5 : 0,
-              ),
+              gradient: const LinearGradient(colors: [
+                AppColors.lightGreen,
+                AppColors.darkGreen,
+              ]),
+              // border: Border.all(
+              //   color: Colors.grey,
+              //   width: isSelected ? .5 : 0,
+              // ),
               borderRadius: BorderRadius.circular(
                 12.5,
               ),

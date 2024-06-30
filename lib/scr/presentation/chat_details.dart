@@ -1,3 +1,4 @@
+import 'package:f_food_delivery/scr/presentation/constant/app_colors.dart';
 import 'package:f_food_delivery/scr/presentation/constant/dummy_data.dart';
 import 'package:f_food_delivery/scr/presentation/root_scaffold_widget.dart';
 import 'package:f_food_delivery/scr/presentation/widgets/app_input.dart';
@@ -37,7 +38,7 @@ class ChatDetails extends StatelessWidget {
                           child: ListView.separated(
                             shrinkWrap: true,
                             separatorBuilder: (context, index) =>
-                                const SizedBox(height: 5),
+                                const SizedBox(height: 20),
                             itemCount: messages.length,
                             itemBuilder: (context, index) {
                               final item = messages[index];
@@ -50,25 +51,50 @@ class ChatDetails extends StatelessWidget {
                                   alignment: item['who'] == 'sender'
                                       ? Alignment.centerLeft
                                       : Alignment.centerRight,
-                                  child: Chip(
-                                    backgroundColor: item['who'] == 'sender'
-                                        ? const Color.fromARGB(
-                                            255, 236, 234, 234)
-                                        : Colors.greenAccent,
-                                    shape: RoundedRectangleBorder(
+                                  child: Container(
+                                    padding: const EdgeInsets.all(10),
+                                    decoration: BoxDecoration(
+                                      gradient: item['who'] != 'sender'
+                                          ? const LinearGradient(
+                                              colors: [
+                                                AppColors.lightGreen,
+                                                AppColors.darkGreen,
+                                              ],
+                                            )
+                                          : const LinearGradient(colors: [
+                                              Color(0xFFF6F6F6),
+                                              Color(0xFFF6F6F6),
+                                            ]),
                                       borderRadius: BorderRadius.circular(15),
                                     ),
-                                    side: BorderSide.none,
-                                    label: AppText(
+                                    child: AppText(
                                       lbl: item['msg'],
                                       style: TextStyle(
-                                        fontSize: 14,
                                         color: item['who'] == 'sender'
                                             ? Colors.black
                                             : Colors.white,
                                       ),
                                     ),
                                   ),
+                                  // child: Chip(
+                                  //   backgroundColor: item['who'] == 'sender'
+                                  //       ? const Color.fromARGB(
+                                  //           255, 236, 234, 234)
+                                  //       : Colors.greenAccent,
+                                  //   shape: RoundedRectangleBorder(
+                                  //     borderRadius: BorderRadius.circular(15),
+                                  //   ),
+                                  //   side: BorderSide.none,
+                                  //   label: AppText(
+                                  //     lbl: item['msg'],
+                                  //     style: TextStyle(
+                                  //       fontSize: 14,
+                                  //       color: item['who'] == 'sender'
+                                  //           ? Colors.black
+                                  //           : Colors.white,
+                                  //     ),
+                                  //   ),
+                                  // ),
                                 ),
                               );
                             },

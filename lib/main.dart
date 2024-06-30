@@ -1,6 +1,7 @@
 import 'package:f_food_delivery/scr/presentation/bottom_navigation.dart';
 import 'package:f_food_delivery/scr/presentation/call_ringing.dart';
 import 'package:f_food_delivery/scr/presentation/chat_details.dart';
+import 'package:f_food_delivery/scr/presentation/constant/app_colors.dart';
 import 'package:f_food_delivery/scr/presentation/extra_menu.dart';
 import 'package:f_food_delivery/scr/presentation/extra_restaurant.dart';
 import 'package:f_food_delivery/scr/presentation/filter_section.dart';
@@ -43,7 +44,10 @@ class MyApp extends StatelessWidget {
         fontFamily: 'myFont',
         textTheme: Theme.of(context).textTheme.apply(
               fontFamily: 'myFont',
+              bodyColor: AppColors.black,
+              displayColor: AppColors.black,
             ),
+        scaffoldBackgroundColor: AppColors.white,
       ),
       debugShowCheckedModeBanner: false,
       initialRoute: '/',

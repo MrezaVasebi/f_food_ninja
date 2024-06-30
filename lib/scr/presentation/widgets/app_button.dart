@@ -1,3 +1,4 @@
+import 'package:f_food_delivery/scr/presentation/constant/app_colors.dart';
 import 'package:f_food_delivery/scr/presentation/widgets/app_text.dart';
 import 'package:flutter/material.dart';
 
@@ -22,8 +23,8 @@ class AppButton extends StatelessWidget {
       decoration: const BoxDecoration(
         gradient: LinearGradient(
           colors: [
-            Colors.greenAccent,
-            Colors.green,
+            AppColors.lightGreen,
+            AppColors.darkGreen,
           ],
         ),
         borderRadius: BorderRadius.all(
@@ -44,9 +45,8 @@ class AppButton extends StatelessWidget {
         child: AppText(
           lbl: lbl,
           style: const TextStyle(
-            color: Colors.white,
             fontSize: 15,
-            fontFamily: 'myFont',
+            color: AppColors.white,
           ),
         ),
       ),

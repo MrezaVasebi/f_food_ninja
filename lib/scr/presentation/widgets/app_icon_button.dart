@@ -1,3 +1,4 @@
+import 'package:f_food_delivery/scr/presentation/constant/app_colors.dart';
 import 'package:f_food_delivery/scr/presentation/widgets/app_text.dart';
 import 'package:flutter/material.dart';
 
@@ -25,10 +26,10 @@ class AppIconButton extends StatelessWidget {
               152,
               57,
             ),
-        backgroundColor: backgroundColor ?? Colors.white,
+        backgroundColor: backgroundColor ?? AppColors.white,
         side: const BorderSide(
           width: .5,
-          color: Colors.grey,
+          color: AppColors.grey,
         ),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(
@@ -42,7 +43,7 @@ class AppIconButton extends StatelessWidget {
         lbl: lbl,
         style: const TextStyle(
           fontSize: 14,
-          color: Colors.black,
+          color: AppColors.black,
         ),
       ),
     );
