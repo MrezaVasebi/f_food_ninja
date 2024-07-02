@@ -1,3 +1,4 @@
+import 'package:f_food_delivery/scr/presentation/constant/app_colors.dart';
 import 'package:f_food_delivery/scr/presentation/sign_in_up_root_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -18,7 +19,7 @@ class VerificationCode extends StatelessWidget {
       },
       bodyChild: TextField(
         keyboardType: TextInputType.number,
-        cursorColor: Colors.black,
+        cursorColor: AppColors.black,
         decoration: const InputDecoration(
           hintText: 'Verification code',
           hintStyle: TextStyle(
@@ -26,11 +27,11 @@ class VerificationCode extends StatelessWidget {
             color: Colors.black,
           ),
           contentPadding: EdgeInsets.all(8),
-          fillColor: Colors.white,
+          fillColor: AppColors.white,
           filled: true,
           enabledBorder: OutlineInputBorder(
             borderSide: BorderSide(
-              color: Colors.blueGrey,
+              color: AppColors.blueGrey,
               width: .3,
             ),
             borderRadius: BorderRadius.all(
@@ -39,7 +40,7 @@ class VerificationCode extends StatelessWidget {
           ),
           focusedBorder: OutlineInputBorder(
             borderSide: BorderSide(
-              color: Colors.blueGrey,
+              color: AppColors.blueGrey,
               width: .3,
             ),
             borderRadius: BorderRadius.all(
@@ -50,7 +51,7 @@ class VerificationCode extends StatelessWidget {
         style: const TextStyle(
           fontSize: 25,
           height: 3,
-          color: Colors.black,
+          color: AppColors.black,
         ),
         textAlign: TextAlign.center,
         inputFormatters: [

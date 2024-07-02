@@ -29,7 +29,6 @@ class SignIn extends StatelessWidget {
                       lbl: 'Sign Up For Free',
                       style: TextStyle(
                         fontSize: 20,
-                        color: Colors.black,
                         fontWeight: FontWeight.bold,
                       ),
                     ),

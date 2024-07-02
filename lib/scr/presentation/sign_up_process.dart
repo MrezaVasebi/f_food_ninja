@@ -7,6 +7,8 @@ class SignUpProcess extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final inputHint = ['First Name', 'Last Name', 'Mobile Number'];
+
     return SignInUpRootWidget(
       title: 'Fill in your bio to get started',
       desc: 'This data will be displayed in your account profile for security',
@@ -16,23 +18,20 @@ class SignUpProcess extends StatelessWidget {
       onTapBack: () {
         Navigator.pop(context);
       },
-      bodyChild: Column(
-        children: [
-          AppInput(
+      bodyChild: ListView.separated(
+        itemBuilder: (context, index) {
+          final item = inputHint[index];
+
+          return AppInput(
             onChanged: (value) {},
-            hintText: 'First Name',
-          ),
-          const SizedBox(height: 20),
-          AppInput(
-            onChanged: (value) {},
-            hintText: 'Last Name',
-          ),
-          const SizedBox(height: 20),
-          AppInput(
-            onChanged: (value) {},
-            hintText: 'Mobile Number',
-          ),
-        ],
+            hintText: item,
+          );
+        },
+        shrinkWrap: true,
+        itemCount: inputHint.length,
+        separatorBuilder: (context, index) {
+          return const SizedBox(height: 20);
+        },
       ),
     );
   }
