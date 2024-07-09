@@ -28,10 +28,10 @@ class _SplashState extends State<Splash> {
   }
 
   _navigateToOnboarding() async {
-    await Future.delayed(const Duration(seconds: 2), () {});
-
-    // ignore: use_build_context_synchronously
-    Navigator.pushNamed(context, '/onboarding');
+    await Future.delayed(const Duration(seconds: 2), () {
+      // ignore: use_build_context_synchronously
+      Navigator.pushNamed(context, '/onboarding');
+    });
 
     // Navigator.push(
     //   // ignore: use_build_context_synchronously

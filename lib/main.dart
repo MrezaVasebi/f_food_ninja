@@ -49,7 +49,7 @@ class MyApp extends StatelessWidget {
             ),
         scaffoldBackgroundColor: AppColors.white,
       ),
-      debugShowCheckedModeBanner: false,
+      debugShowCheckedModeBanner: false, // hide debug banner
       initialRoute: '/',
       routes: {
         '/': (context) => const Splash(),
